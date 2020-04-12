@@ -5,8 +5,7 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+
   font-family: Helvetica;
   Font-size: 22px;
   color: seashell;
@@ -54,25 +53,31 @@ nav {
 
 /*Content*/
 .content {
-  width: auto;
-  text-align: center;
-}
-
-.mainbanner {
+  width: 100%;
   display: flex;
-  width: 1200px;
-  height: 700px;
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.banner-txt span{
-  background-color: black;
-  color: white;
+/*Banner*/
+.mainbanner{
+  display: flex;
   width: 1200px;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+}
+
+.mainbanner span{
+  background-color: black;
+  width: 100%;
   text-align: center;
 }
+
+
+
 
 /*Gallery Section*/
 /*Teas*/
