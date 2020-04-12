@@ -14,6 +14,7 @@ header {
   font-size: 14px;
   font-weight: bold;
   width: 100%;
+  border-bottom: 1px solid black;
   background-color: white;
   z-index: 2;
 }
@@ -47,8 +48,8 @@ margin-left: 15px;
   width: 100%;
   justify-content: space-around;
   position: relative;
-  top: 60px;
-  margin-bottom: 60px;
+  top: 110px;
+  margin-bottom: 180px;
 }
 
 /*Columns*/
