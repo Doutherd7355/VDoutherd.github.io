@@ -1,7 +1,5 @@
 /*Universal Styles*/
-div {
-  border: 1px solid black;
-}
+
 
 body {
   margin: 0;
@@ -25,6 +23,7 @@ nav {
 white-space: nowrap;
 align-items: center;
 justify-content: center;
+margin-left: 15px;
 
 
 }
@@ -33,8 +32,9 @@ justify-content: center;
   display: flex;
   align-items: center;
   color: mediumaquamarine;
-  width: 80%;
+  width: 75%;
   margin-bottom: 0;
+  margin-left: 20px;
 }
 
 .logo span {
