@@ -1,63 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 18px;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 /* Start of CSS*/
 /* Logo Section*/
-div {
-  border: 1px solid black;
-}
-
 .header {
   background-color: black;
   width: 100%;
@@ -73,8 +15,8 @@ div {
 
 .logo img {
   height: 1.5rem;
-  margin-left: .5rem;
-  margin-right: 1rem;
+  padding-left: .5rem;
+  padding-right: 1rem;
 }
 
 .header p {
@@ -87,8 +29,11 @@ div {
 /* Main Container*/
 .container {
   max-width: 960px;
+  height: 100%;
   margin: 0 auto;
   font-family: Helvetica;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Banner Section*/
@@ -101,7 +46,8 @@ div {
 
 .banner-txt {
   background-color: black;
-  margin-top: 9rem;
+  position: relative;
+  top: 9rem;
   width: 25rem;
   color: white;
   justify-content: center;
@@ -110,13 +56,13 @@ div {
 
 .banner-txt h1 {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .banner-txt h2 {
   font-size: 1rem;
   font-weight: bold;
-  margin-top: 2rem;
+  padding-top: 2rem;
   margin-bottom: .25rem;
 }
 
@@ -124,7 +70,7 @@ div {
   font-family: Helvetica;
   font-weight: bold;
   text-transform: uppercase;
-  margin-left: 3rem;
+  padding-left: 3rem;
 }
 
 /* Navigation Section*/
@@ -144,15 +90,15 @@ nav {
 }
 
 /* Gallery Section*/
-.gallery{
+.gallery {
   width: 100%;
 }
-.gallery-items{
+
+.gallery-items {
   margin: 3rem 0rem 3rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
 }
 
 .product-img {
@@ -165,46 +111,46 @@ nav {
   border: 4px solid black;
 }
 
-.product-img img{
+.product-img img {
   max-width: 8rem;
 }
 
-.description{
+.description {
   display: block;
   padding: 0.5rem;
   background-color: black;
   text-align: center;
   color: white;
 }
+
 /* Location Section*/
-.location{
+.location {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.location-info{
-width: 35%;
-display: flex;
-flex-direction: column;
-margin-top: 3rem;
-margin-bottom: 4rem;
+
+.location-info {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
 }
-.loc-title{
+
+.loc-title {
   background-color: black;
   color: white;
   padding: 1rem 2rem;
 }
 
-
 /* Footer Section*/
-footer{
-  display: flex;
-  height: 5rem;
-  align-items: center;
-  background-color: black;
-}
 
-.foot-txt{
-  color: white;
+footer{
+  padding: 5rem 0;
+  height: 5rem;
+ margin-top: 4rem;
+ background-color: black;
+ color: white;
 }

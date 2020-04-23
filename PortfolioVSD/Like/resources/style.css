@@ -1,0 +1,81 @@
+html {
+  font-family: "Merriweather";
+}
+
+
+body{
+  width: 100%;
+  height: 100%;
+
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+}
+
+body{
+}
+
+/* NAVIGATION */
+nav{
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo{
+  width: 80%;
+  height: auto;
+}
+
+.logo-img {
+  width: 15%;
+}
+
+.nav-txt span{
+padding: 1rem;
+text-decoration: none;
+}
+
+.nav-txt a{
+  color: black;
+}
+
+a:hover{
+  color: #dcf90a;
+}
+
+#testbody{
+background-image: url("GreenDotBkgrnd.png");
+background-color: #dcf90a;
+background-repeat: repeat;
+background-size: cover;
+position: relative;
+top: 6rem;
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  text-align: center;
+}
+
+.card img{
+  padding-top: 1rem;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+.btn{
+  width: 70%;
+}
+
+
+.card{
+    margin: 0 auto;
+}
+footer{
+
+}
