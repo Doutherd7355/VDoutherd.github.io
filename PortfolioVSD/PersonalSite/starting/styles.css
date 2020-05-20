@@ -95,12 +95,11 @@ border-radius: 50%;
 
 /* Typography */
 
-.font_info{
-
-  margin: 3rem;
+.font_00, .font_01{
+  font-size: 1rem;
 }
 /* Montserrat Font  for headlines*/
-.MontserratFont h3, p{
+.font_00{
   font-family: 'Montserrat', sans-serif;
 }
 .font_00 .fontlight{
@@ -113,16 +112,18 @@ border-radius: 50%;
   font-weight: 800;
 }
 
-/* Montaga Font for content */
-.MontagaFont{
-  font-family: 'Montaga', serif;
+/* Caladea Font for content */
+.font_01{
+  font-family: 'Caladea', serif;
 }
-.font_01 .fontlight{
-  font-weight: 200;
-}
+
 .font_01 .fontreg{
   font-weight: 400;
 }
 .font_01 .fontbold{
-  font-weight: 800;
+  font-weight: 700;
+}
+
+code{
+  color: blue;
 }
