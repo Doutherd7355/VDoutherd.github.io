@@ -1,0 +1,80 @@
+*{
+
+}
+
+section, .col-6, .col-12{
+    border: 1px solid black;
+}
+#colors{
+text-align: center;
+}
+
+
+/* colors */
+#circle{
+margin: 2px;
+height: 70px;
+width: 70px;
+border-radius: 50%;
+}
+
+p{
+  position: relative;
+  top: 25px;
+}
+
+/* Blues */
+.blue_00{
+  background-color: #6e84b3;
+}
+.blue_01{
+  background-color: #465473;
+}
+.blue_02{
+  background-color: #9CBBFF;
+}
+.blue_03{
+  background-color: #71A4C9;
+}
+/* Pinks */
+.pink_00{
+    background-color: #a53953;
+}
+.pink_01{
+    background-color: #F29DB1;
+}
+.pink_02{
+    background-color: #B57584;
+}
+.pink_03{
+    background-color: #73283A;
+}
+
+/* Greens */
+.green_00{
+    background-color: #314421;
+}
+.green_01{
+  background-color: #819173;
+}
+
+.green_02{
+  background-color: #96d166;
+}
+
+.green_03{
+  background-color: #699147;
+}
+/* Purples */
+.purple_00{
+    background-color: #532238;
+}
+.purple_01{
+    background-color: #BA9C97;
+}
+.purple_02{
+    background-color: #A1426D;
+}
+.purple_03{
+    background-color: #87392A;
+}
