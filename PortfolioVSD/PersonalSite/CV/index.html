@@ -1,58 +1,52 @@
+<!-- This is the personal site -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
-  <title>Vanessa's Personal Site</title>
+  <title>Vanessa Doutherd</title>
   <link rel="stylesheet" type="text/css" href="./resources/style.css">
-</head>
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&display=swap" rel="stylesheet">
+  <!--Stylesheets-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://kit.fontawesome.com/b3ce3de160.js" crossorigin="anonymous"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="index.js"></script>
 
 <body>
-  <!-- Main Banner Section -->
-  <div class="container">
-    <div class="main-banner">
-      <img src="" alt="Vanessa Profile Picture">
-      <span>Text to lay on top</span>
-    </div>
-      <!-- Content Section -->
-    <div class="content-info">
-      <div class="summary-txt">
-        <h1>Heading</h1>
-        <p>Text</p>
+  <!-- Header Area -->
+  <header id="header">
+    <div class="row">
+      <div class="col-3">
+        <nav class="primary-nav navbar-expand-md bgcolor-pepper1">
+          <div class="sitetitle text-center text-light py-5">
+            <a class="navbar-brand font-headlinePlay font-size-40">VSD</a>
+            <p class="description text-uppercase "> Vanessa Doutherd</p>
+          </div>
+          <div class="d-flex flex-column">
+            <a href="#" class="nav-item nav-link text-white-50 font-contentRobo font-size-16 active ">About</a>
+            <hr class="hr-small">
+            <a href="#" class="nav-item nav-link text-white-50 font-contentRobo font-size-16 active">Experience</a>
+            <hr class="hr-small">
+            <a href="#" class="nav-item nav-link text-white-50 font-contentRobo font-size-16 active">Projects</a>
+            <hr class="hr-small">
+            <a href="#" class="nav-item nav-link text-white-50 font-contentRobo font-size-16 active">Contact</a>
+            <hr class="hr-small">
+          </div>
+        </nav>
       </div>
-      <!-- make this into a gallery -->
-      <div class="content-img">
-        <img src="" alt=" content-img">
-        <img src="" alt=" content-img">
-        <img src="" alt=" content-img">
-      </div>
     </div>
-<!-- Experience -->
-    <div class="content-exp">
-      <h2>Text</h2>
-      <p></p>
+    <button class="toggle-button"type="button" name="toggle-button"><span class="fas fa-bars fa-2x"></span></button>
+    <div class="social">
+      <span class='mr-3'> <i class="fab fa-linkedin"></i> </span>
+
     </div>
-
-    <!-- Contact Me -->
-
-  </div>
-
-  <!-- Sidebar Section -->
-<div class="sidebar-content">
-  <nav class="sidebar-nav">
-    <ul>
-      <li>Bio</li>
-      <li>Expertise</li>
-      <li>Skills</li>
-      <li>Contact</li>
-    </ul>
-  </nav>
-  <div class="other-txt">
-
-  </div>
-
-</div>
+  </header>
 </body>
-
 
 </html>
