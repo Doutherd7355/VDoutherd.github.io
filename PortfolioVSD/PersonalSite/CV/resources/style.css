@@ -1,7 +1,55 @@
 /* This is the CSS for the personal site */
-/* Reset */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,900&display=swap');
+/* reset */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 
 /* Code Start */
@@ -21,6 +69,10 @@
 /* GLOBAL CLASSES */
 .font-headlinePlay {
   font: normal 500 40px var(--font-headlinePlay);
+}
+
+.font-PlayBold{
+  font: normal 800 50px var(--font-headlinePlay);
 }
 
 .font-contentRobo {
@@ -104,7 +156,51 @@
 }
 
 /* site-main */
-.site-main{
-  background-color: var(--color-pepper);
+
+{
+
 }
-/* Site main end */
+.site-banner .banner-area{
+background: url('./marble.jpg') no-repeat;
+background-size: cover;
+width: 100%;
+height: 100vh;
+position: relative;
+}
+
+.site-banner .banner-area .author{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.site-banner .banner-area .author .author-img{
+  width: 275px;
+  height: 275px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px var(--color-border);
+  margin: auto;
+  background: url('./prof1color.jpg') no-repeat;
+  background-size: contain;
+  position: relative;
+  top: 2rem;
+
+
+}
+.author-text{
+position: relative;
+top: 3rem;
+}
+.author-text-color{
+  background-color: white;
+  margin-top: 30px;
+  opacity: .55;
+  width: 700px;
+  height:150px;
+  position: relative;
+  bottom: 7rem;
+ z-index: -1;
+}
+
+/* site main end */
