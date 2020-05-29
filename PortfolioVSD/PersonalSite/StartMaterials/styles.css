@@ -1,0 +1,118 @@
+/* Design System CSS */
+body {
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.col-6, .col-12 {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+#colors, #typography {
+  text-align: center;
+  position: relative;
+  top: 2rem;
+}
+
+h2 {
+  margin-top: 3rem;
+}
+
+h3 {
+  padding: 1rem;
+}
+
+/* colors */
+#circle {
+  margin: 2px;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+
+#circle p {
+  position: relative;
+  top: 25px;
+  font-family: sans-serif;
+}
+
+/* Pepper Color Blue Hue */
+.blue_00 {
+  background-color: #87AFC9;
+}
+
+.blue_01 {
+  background-color: #5C788A;
+}
+
+.blue_02 {
+  background-color: #29353D;
+}
+
+.blue_03 {
+  background-color: #32404A;
+}
+.blue_04 {
+  background-color: #222C33;
+}
+
+/* Complement and compound color (in that order) */
+
+.comp_00{
+  background-color: #8A746A;
+}
+.comp_01{
+  background-color: #704E40;
+}
+
+
+/* Typography */
+.font_00, .font_01 {
+  font-size: 1rem;
+}
+
+/* Playfair Font  for headlines*/
+.font_00 {
+  font-family: 'Playfair Display', serif;
+}
+
+.font_00 .fontreg {
+  font-weight: 400;
+}
+
+.font_00 .fontmed {
+  font-weight: 500;
+}
+
+.font_00 .fontbold {
+  font-weight: 700;
+}
+.font_00 .fontXbold {
+  font-weight: 800;
+}
+.font_00 .fontblack {
+  font-weight: 900;
+}
+
+/* Roboto */
+.font_01 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font_01 .fontthin {
+  font-weight: 100;
+}
+
+.font_01 .fontlight {
+  font-weight: 300;
+}
+.font_01 .fontreg {
+  font-weight: 400;
+}
+.font_01 .fontbold {
+  font-weight: 800;
+}

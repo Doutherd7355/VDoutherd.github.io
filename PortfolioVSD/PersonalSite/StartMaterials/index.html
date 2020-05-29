@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Website Design System</title>
+
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,900&display=swap" rel="stylesheet">
+  <!--Stylesheets-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css">
+
+  <script src="https://kit.fontawesome.com/b3ce3de160.js" crossorigin="anonymous"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <h1>Design System for Portfolio Site</h1>
+  <section id="colors">
+
+    <div class="container">
+      <h2>Colors</h2>
+      <!-- all colors with 00 mean they are the origin color -->
+      <div class="row">
+        <!-- Main Colors-->
+        <div class="col-6">
+          <h3>Main Colors</h3>
+          <div class="row d-flex justify-content-center">
+            <div id="circle" class="blue_00"> <strong>
+                <p>#87AFC9</p>
+              </strong></div>
+            <div id="circle" class="blue_01"> <strong>
+                <p>#5C788A</p>
+              </strong></div>
+            <div id="circle" class="blue_02"> <strong>
+                <p>#29353D</p>
+              </strong></div>
+            <div id="circle" class="blue_03"> <strong>
+                <p>#32404A</p>
+              </strong></div>
+            <div id="circle" class="blue_04"> <strong>
+                <p>#222C33</p>
+              </strong></div>
+          </div>
+        </div>
+        <div class="col-6">
+          <h3>Comp Colors</h3>
+          <div class="row d-flex justify-content-center">
+            <div id="circle" class="comp_00"> <strong>
+                <p>#8A746A</p>
+              </strong></div>
+            <div id="circle" class="comp_01"> <strong>
+                <p>#704E40</p>
+              </strong></div>
+          </div>
+        </div>
+  </section>
+
+  <section id="typography">
+    <div class="container">
+
+      <h2>Typography</h2>
+      <!--  All of the fonts I want and what they look like-->
+      <div class="row">
+
+
+        <!-- Headline Font -->
+        <div class="col-6" class="PlayFont">
+          <h3>Headline Font</h3>
+          <div class="row d-flex justify-content-center">
+            <div class="font_00">
+              <h4>Playfair Display</h4>
+              <br>
+              <p class="fontreg">This is an example of the 400 font.</p><br>
+              <p class="fontreg"><i>This is an example of the 400 font.</i></p><br>
+              <p class="fontmed">This is an example of the 500 font.</p><br>
+              <p class="fontmed"><i>This is an example of the 500 italic font.</i></p>
+              <p class="fontbold">This is an example of the 700 Bold font.</p><br>
+              <p class="fontbold"><i>This is an example of the 700 Bold italic font.</i></p>
+              <p class="fontXbold">This is an example of the 800 Extra Bold font.</p><br>
+              <p class="fontXbold"><i>This is an example of the 800 Extra Bold italic font.</i></p>
+              <p class="fontblack">This is an example of the Black 900 font.</p><br>
+              <p class="fontblack"><i>This is an example of theBlack 900 italic font.</i></p>
+            </div>
+          </div>
+        </div>
+        <!-- Content font -->
+        <div class="col-6">
+          <h3>Content Font</h3>
+          <div class="row d-flex justify-content-center">
+            <div class="font_01">
+              <h4>Roboto</h4>
+              <br>
+              <p class="fontthin">This is an example of the 100 font.</p><br>
+              <p class="fontthin"><i>This is an example of the 100 font.</i></p><br>
+              <p class="fontlight">This is an example of the 300 font.</p><br>
+              <p class="fontlight"><i>This is an example of the 300 font.</i></p><br>
+              <p class="fontreg">This is an example of the 400 font.</p><br>
+              <p class="fontreg"><i>This is an example of the 400 font.</i></p><br>
+              <p class="fontbold">This is an example of the 800 font.</p><br>
+              <p class="fontbold"><i>This is an example of the 800italic font.</i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Font Link -->
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12">
+          <div class="font_link">
+            <h4>Font Link</h4>
+            <pre>
+            <code>
+              link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,900&display=swap" rel="stylesheet" <br>
+              style>
+              @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,900&display=swap');
+              /style <br>
+              font-family: 'Playfair Display', serif; <br>
+              font-family: 'Roboto', sans-serif;
+
+            </code>
+            </pre>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+</body>
+
+</html>
