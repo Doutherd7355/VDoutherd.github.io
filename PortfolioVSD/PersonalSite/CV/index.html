@@ -5,17 +5,19 @@
 <head>
   <meta charset="utf-8">
   <title>Vanessa Doutherd</title>
-  <link rel="stylesheet" type="text/css" href="./resources/style.css">
+
   <!--Google Fonts-->
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&display=swap" rel="stylesheet">
   <!--Stylesheets-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/b3ce3de160.js" crossorigin="anonymous"></script>
-
+  <link rel="stylesheet" type="text/css" href="./resources/style.css">
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/b3ce3de160.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./index.js"></script>
+  <script type="text/javascript" src="./vendor/typed/typed.min.js"></script>
 
 <body>
   <!-- Header Area -->
@@ -28,7 +30,7 @@
             <p class="description text-uppercase "> Vanessa Doutherd</p>
           </div>
           <div class="d-flex flex-column">
-            <a href="#" class="nav-item nav-link text-white-50 font-contentRobo font-size-16 active ">About</a>
+            <a href="#" class="nav-item nav-link text-white-50 font-contentRobo font-size-16 active ">About Me</a>
             <hr class="hr-small">
             <a href="#" class="nav-item nav-link text-white-50 font-contentRobo font-size-16 active">Experience</a>
             <hr class="hr-small">
@@ -44,16 +46,52 @@
   <main id="side-main">
     <div class="row m-0">
       <div class="col-md-9 offset-3 px-0">
+        <!-- Banner Section -->
         <section class="site-banner" id="home">
           <div class="banner-area">
             <div class="author text-center">
               <div class="author-img"></div>
               <div class="author-text">
                 <h1 class='text-black font-PlayBold text-uppercase py-3'>Vanessa Doutherd</h1>
-                <h5 class=" font-contentRobo text-lowercase"><span id="typed">Education</span></h5>
+                <h5 class=" font-contentRobo text-lowercase"><span id="typed"></span></h5>
               </div>
               <div class="author-text-color"></div>
-              </div>
+            </div>
+          </div>
+        </section>
+        <!-- About Section -->
+        <section class="about px-4 my5" id="about-me">
+          <div class="me py-4">
+            <h1 class="text-uppercase font-contentRobo font-size-27 text-white">About me</h1>
+          </div>
+          <div class="row m-0">
+            <div class="col-sm-5 pl-0">
+              <img class="img-fluid" src="./resources/pose2.jpg" alt="">
+            </div>
+            <div class="col-sm-7 py-o">
+              <p class="content-text py-2">Since I was very young, I knew I was meant for the educational field. It is one of the biggest ways that I have found which helps me achieve my calling of helping people in all capacities of life.
+
+                After a lot of hard work and many walked roads, I can proudly say that I remain a driven educator after 5 years of experience teaching a variety of students in academic and cultural education.
+
+                As a leader who manages and guides learning experiences for students and peers both on and offline, I know the importance of excellent interpersonal and collaborative skills in a successful learning and teaching environment. Over my
+                short few years as an instructor, I have developed a strong understanding of in-person & online instruction, and advanced knowledge of adult learning theory.
+
+                My personal take on learning is that it is crucial to never stop. I identify as a lifelong learner, and utilize that passion to always view the experiences I encounter in daily life as teachable moments. We learn best about the things
+                we can personally connect with; the things we find fun and exciting. In my free time, you will likely find me exploring creative ventures in Web Design and Development, Instructional Design for E-learning,
+                and learning about Self Development in leadership and management. <br>
+              </p>
+            </div>
+          </div>
+          <div class=" row">
+            <div class=" col-12 ">
+              <p class="content-text">
+                I specialize in: • Curriculum and Content Development • Educational Technology & Digital Literacy • Coaching/Training/Mentoring • Student Centered Learning • Project Management and Leadership • Academic Literacy Development <br>
+                <div class="d-flex flex row flex-wrap">
+                  <div class="d-flex flex-column">
+                    <b>Education:</b><span class="text-white-50">CSU- Sacramento. M.A TESOL, B.A English, Advanced Certificate TESOL</span></p>
+                  </div>
+                </div>
+            </div>
           </div>
         </section>
       </div>

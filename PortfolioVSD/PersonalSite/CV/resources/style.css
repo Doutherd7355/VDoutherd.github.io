@@ -62,6 +62,7 @@ table {
   --color-black: #000000;
   --color-greyblue: #5C788A;
   --color-muteblue: #87AFC9;
+  --color-contentBorder: #8A746A;
   --font-headlinePlay: 'Playfair Display', serif;
   --font-contentRobo: 'Roboto', sans-serif;
 }
@@ -79,12 +80,22 @@ table {
   font: normal 300 18px var(--font-contentRobo);
 }
 
+.content-text{
+  font: normal 500 15px var(--font-contentRobo);
+  line-height: 1.2rem;
+  color: white;
+
+}
 .bgcolor-pepper1 {
   background-color: var(--color-dkpepper);
 }
 
 .border-color {
   border-color: var(--color-grey);
+}
+
+.content-border{
+  border-color: var(--color-contentBorder);
 }
 
 /* Font Sizes */
@@ -157,9 +168,6 @@ table {
 
 /* site-main */
 
-{
-
-}
 .site-banner .banner-area{
 background: url('./marble.jpg') no-repeat;
 background-size: cover;
@@ -185,8 +193,6 @@ position: relative;
   background-size: contain;
   position: relative;
   top: 2rem;
-
-
 }
 .author-text{
 position: relative;
@@ -194,7 +200,7 @@ top: 3rem;
 }
 .author-text-color{
   background-color: white;
-  margin-top: 30px;
+  margin-top: 4.7rem;
   opacity: .55;
   width: 700px;
   height:150px;
@@ -202,5 +208,13 @@ top: 3rem;
   bottom: 7rem;
  z-index: -1;
 }
-
 /* site main end */
+
+#about-me{
+  background-color: var(--color-greyblue);
+}
+
+#about-me img{
+  width: 100%;
+  height:auto;
+}
