@@ -83,7 +83,7 @@ table {
 .content-text{
   font: normal 500 15px var(--font-contentRobo);
   line-height: 1.2rem;
-  color: white;
+  color: var(--color-pepper);
 
 }
 .bgcolor-pepper1 {
@@ -210,11 +210,18 @@ top: 3rem;
 }
 /* site main end */
 
-#about-me{
-  background-color: var(--color-greyblue);
-}
+
+} */
 
 #about-me img{
   width: 100%;
   height:auto;
+}
+
+/* Progress Bars */
+.skill .bars p, .skill .bars span{
+	line-height: 10px;
+}
+.progress .progress-bar{
+	background-color: black;
 }
