@@ -189,7 +189,7 @@ position: relative;
   border-radius: 50%;
   box-shadow: 0px 0px 20px var(--color-border);
   margin: auto;
-  background: url('./prof1color.jpg') no-repeat;
+  background: url('./download.png') no-repeat;
   background-size: contain;
   position: relative;
   top: 2rem;
@@ -224,4 +224,13 @@ top: 3rem;
 }
 .progress .progress-bar{
 	background-color: black;
+}
+/* Footer*/
+
+#footer form .row .col input[type="text"],
+#footer form .row .col textarea{
+	border-radius: 0;
+	border: none;
+	border-bottom 1px, solid, #000;
+	padding: 1.5rem 1rem;
 }
