@@ -23,7 +23,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 18px;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -51,51 +51,59 @@ table {
 	border-spacing: 0;
 }
 
+/* Colors */
+/*
+#87AFC9
+
+#5C788A
+
+#29353D  pepper
+
+#32404A
+
+#222C33
+ */
+
 
 /* Code Start */
-:root {
-  --color-pepper: #29353D;
-  --color-dkpepper: #222C33;
-  --color-grey: #32404A;
-	--color-border: #32404A;
-  --color-white: #ffffff;
-  --color-black: #000000;
-  --color-greyblue: #5C788A;
-  --color-muteblue: #87AFC9;
-  --color-contentBorder: #8A746A;
-  --font-headlinePlay: 'Playfair Display', serif;
-  --font-contentRobo: 'Roboto', sans-serif;
-}
 
 /* GLOBAL CLASSES */
 .font-headlinePlay {
-  font: normal 500 40px var(--font-headlinePlay);
+  font-family: 'Playfair Display',serif;
+	font-size: 40px;
+	font-weight: 500;
 }
 
 .font-PlayBold{
-  font: normal 800 50px var(--font-headlinePlay);
+	font-family: 'Playfair Display',serif;
+	font-size: 50px;
+	font-weight: 800;
 }
 
 .font-contentRobo {
-  font: normal 300 18px var(--font-contentRobo);
+	font-family: 'Roboto',sans-serif;
+	font-size: 18px;
+	font-weight: 300;
 }
 
 .content-text{
-  font: normal 500 15px var(--font-contentRobo);
+	font-family: 'Roboto',sans-serif;
+	font-size: 15px;
+	font-weight: 500;
   line-height: 1.2rem;
-  color: var(--color-pepper);
+  color:#29353D;
 
 }
 .bgcolor-pepper1 {
-  background-color: var(--color-dkpepper);
+  background-color: #32404A;
 }
 
 .border-color {
-  border-color: var(--color-grey);
+  border-color: #5C788A;
 }
 
 .content-border{
-  border-color: var(--color-contentBorder);
+  border-color: #5C788A;
 }
 
 /* Font Sizes */
@@ -120,7 +128,7 @@ table {
 }
 
 .hr-small {
-  border: 1px solid var(--color-border);
+  border: 1px solid #5C788A;
   width: 50%;
   margin: 5%;
 }
@@ -149,16 +157,16 @@ table {
 }
 
 #header .nav-link:hover {
-  color: var(--color-white) !important;
+  color: white !important;
 }
 
 #header .toggle-button {
   background: none;
-  color: var(--color-black);
+  color: black;
   position: fixed;
   top: 15px;
   right: 20px;
-  border: 1px solid var(--color-border);
+  border: 1px solid #5C788A;
 }
 
 .toggle-left{
@@ -187,7 +195,7 @@ position: relative;
   width: 275px;
   height: 275px;
   border-radius: 50%;
-  box-shadow: 0px 0px 20px var(--color-border);
+  box-shadow: 0px 0px 20px #5C788A;
   margin: auto;
   background: url('./download.png') no-repeat;
   background-size: contain;
