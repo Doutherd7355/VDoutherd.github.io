@@ -34,6 +34,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+
 }
 ol, ul {
 	list-style: none;
@@ -76,20 +77,20 @@ table {
 
 .font-PlayBold{
 	font-family: 'Playfair Display',serif;
-	font-size: 50px;
+	font-size: 45px;
 	font-weight: 800;
 }
 
 .font-contentRobo {
 	font-family: 'Roboto',sans-serif;
-	font-size: 18px;
-	font-weight: 300;
+	font-size: 14px;
+	font-weight: 400;
+
 }
 
 .content-text{
-	font-family: 'Roboto',sans-serif;
-	font-size: 15px;
-	font-weight: 500;
+	font-family: 'Lora',sans-serif;
+	font-size: 14px;
   line-height: 1.2rem;
   color:#29353D;
 
@@ -98,6 +99,9 @@ table {
   background-color: #32404A;
 }
 
+.bgcolor-dkpepper{
+	background-color:#222C33;
+}
 .border-color {
   border-color: #5C788A;
 }
@@ -129,8 +133,9 @@ table {
 
 .hr-small {
   border: 1px solid #5C788A;
-  width: 50%;
-  margin: 5%;
+  width: 85%;
+  margin: 1rem 2rem .5rem 0rem
+
 }
 
 /* #GLOBAL CLASSES */
@@ -154,10 +159,11 @@ table {
 #header .nav-link {
   margin: .7rem .9rem;
   text-transform: uppercase;
+	color: white !important;
 }
 
 #header .nav-link:hover {
-  color: white !important;
+  color: #87AFC9 !important;
 }
 
 #header .toggle-button {
@@ -175,9 +181,30 @@ table {
 }
 
 /* site-main */
+.navbar-brand{
+	width: 11rem;
+	height: 11rem;
+	text-align: center;
+	position: relative;
+	top: -62px;
+}
 
+#nav-menu{
+position:relative;
+	top: -7rem;
+	margin-left: 0;
+}
+
+.nav-item{
+	font-weight: 300;
+}
+
+.icon-social{
+	color: white;
+}
 .site-banner .banner-area{
 background: url('./marble.jpg') no-repeat;
+border-bottom: 2px solid #32404A;
 background-size: cover;
 width: 100%;
 height: 100vh;
@@ -192,8 +219,8 @@ position: relative;
 }
 
 .site-banner .banner-area .author .author-img{
-  width: 275px;
-  height: 275px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   box-shadow: 0px 0px 20px #5C788A;
   margin: auto;
@@ -218,12 +245,62 @@ top: 3rem;
 }
 /* site main end */
 
-
-} */
-
-#about-me img{
+.about-me-img{
   width: 100%;
   height:auto;
+	border-top: 2px solid #32404A;
+	border-bottom: 2px solid #32404A;
+	margin-left: 2rem;
+}
+
+.about-me-title{
+	padding: 4rem 0rem 1rem;
+	margin-left: 2rem;
+}
+.degree-text {
+	margin-left: 3rem;
+	text-align: center;
+
+}
+
+.degree-head{
+		padding: 1.8rem 0rem .5rem
+}
+
+.degree-title{
+padding: 1.5rem 0rem 0rem;
+	font-weight: 600;
+}
+
+.degree-head1{
+	padding-bottom: .5rem;
+}
+.degree-head2, .degree-date{
+	position: relative;
+	top: -10px;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.degree-school-logo{
+	width: 115px;
+	height: 115px;
+}
+
+.degree-program h5{
+	position: relative;
+	top: -4px;
+	padding-left: 3rem;
+	text-decoration: underline;
+}
+
+/* background */
+#background-area, .projects-area{
+padding: 4rem 2rem 2rem;
+}
+
+#background-area h5 {
+	text-decoration: underline;
 }
 
 /* Progress Bars */
@@ -233,8 +310,30 @@ top: 3rem;
 .progress .progress-bar{
 	background-color: black;
 }
-/* Footer*/
 
+
+.projects-area{
+	z-index: 1;
+	background: white;
+}
+
+.projects-area a{
+	color: black;
+}
+/* Footer*/
+.sticky-footer{
+position: sticky;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #704E40;
+	color: black;
+	z-index: -1;
+
+}
 #footer form .row .col input[type="text"],
 #footer form .row .col textarea{
 	border-radius: 0;
