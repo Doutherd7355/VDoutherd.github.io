@@ -1,12 +1,11 @@
 /* This is the CSS for the personal site */
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,900&display=swap');
+
 /* reset */
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,37 +19,44 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 18px;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 18px;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
-body {
-	line-height: 1;
 
+body {
+  line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
+
+
 
 /* Colors */
 /*
@@ -64,49 +70,46 @@ table {
 
 #222C33
  */
-
-
 /* Code Start */
-
 /* GLOBAL CLASSES */
 .font-headlinePlay {
-  font-family: 'Playfair Display',serif;
-	font-size: 40px;
-	font-weight: 500;
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: 500;
 }
 
-.font-PlayBold{
-	font-family: 'Playfair Display',serif;
-	font-size: 45px;
-	font-weight: 800;
+.font-PlayBold {
+  font-family: 'Playfair Display', serif;
+  font-size: 45px;
+  font-weight: 800;
 }
 
 .font-contentRobo {
-	font-family: 'Roboto',sans-serif;
-	font-size: 14px;
-	font-weight: 400;
-
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
-.content-text{
-	font-family: 'Lora',sans-serif;
-	font-size: 14px;
-  line-height: 1.2rem;
-  color:#29353D;
-
+.content-text {
+  font-family: 'Lora', sans-serif;
+  font-size: 15px;
+  line-height: 1.4rem;
+  color: #29353D;
 }
+
 .bgcolor-pepper1 {
   background-color: #32404A;
 }
 
-.bgcolor-dkpepper{
-	background-color:#222C33;
+.bgcolor-dkpepper {
+  background-color: #222C33;
 }
+
 .border-color {
   border-color: #5C788A;
 }
 
-.content-border{
+.content-border {
   border-color: #5C788A;
 }
 
@@ -134,8 +137,13 @@ table {
 .hr-small {
   border: 1px solid #5C788A;
   width: 85%;
-  margin: 1rem 2rem .5rem 0rem
+  margin: .5rem 2rem .3rem 0rem
+}
 
+	.hr-lg {
+	  border: 1px solid black;
+	  width: 45%;
+	  margin: .5rem 2rem 2rem 0rem
 }
 
 /* #GLOBAL CLASSES */
@@ -144,7 +152,6 @@ table {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 99999;
   transition: left .5s ease;
 }
 
@@ -159,7 +166,7 @@ table {
 #header .nav-link {
   margin: .7rem .9rem;
   text-transform: uppercase;
-	color: white !important;
+  color: white !important;
 }
 
 #header .nav-link:hover {
@@ -175,50 +182,78 @@ table {
   border: 1px solid #5C788A;
 }
 
-.toggle-left{
+.toggle-left {
   left: 0 !important;
   width: 1000px !important;
 }
 
 /* site-main */
-.navbar-brand{
-	width: 11rem;
-	height: 11rem;
-	text-align: center;
-	position: relative;
-	top: -62px;
+.navbar-brand {
+  width: 11rem;
+  height: 11rem;
+  margin: 0 auto;
+  position: relative;
+  top: -62px;
+	left:.2rem;
 }
 
-#nav-menu{
-position:relative;
-	top: -7rem;
-	margin-left: 0;
+#nav-menu {
+  position: relative;
+  top: -7rem;
+  margin-left: 0;
 }
 
-.nav-item{
-	font-weight: 300;
+.nav-item {
+  font-weight: 300;
 }
 
-.icon-social{
-	color: white;
-}
-.site-banner .banner-area{
-background: url('./marble.jpg') no-repeat;
-border-bottom: 2px solid #32404A;
-background-size: cover;
-width: 100%;
-height: 100vh;
-position: relative;
+.social-media {
+  margin: 0 auto;
+  padding-top: 2rem;
 }
 
-.site-banner .banner-area .author{
+.social-media-icons a {
+  color: white;
+}
+
+.social-media-icons a:hover {
+  text-decoration: none;
+}
+
+.icon-social1 {
+  padding-right: .2rem;
+}
+
+.icon-social1 a:hover {
+  color: #0e76a8;
+}
+
+.icon-social2 {
+  padding-left: .2rem;
+}
+
+.icon-social2 a:hover {
+  color: #211F1F;
+}
+
+/* Site Banner Area */
+.site-banner .banner-area {
+  background: url('./marble.jpg') no-repeat;
+  border-bottom: 2px solid #32404A;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.site-banner .banner-area .author {
   position: absolute;
-  top:50%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.site-banner .banner-area .author .author-img{
+.site-banner .banner-area .author .author-img {
   width: 240px;
   height: 240px;
   border-radius: 50%;
@@ -229,115 +264,157 @@ position: relative;
   position: relative;
   top: 2rem;
 }
-.author-text{
-position: relative;
-top: 3rem;
+
+.author-text {
+  position: relative;
+  top: 3rem;
 }
-.author-text-color{
+
+.author-text-color {
   background-color: white;
   margin-top: 4.7rem;
   opacity: .55;
   width: 700px;
-  height:150px;
+  height: 150px;
   position: relative;
   bottom: 7rem;
- z-index: -1;
+  z-index: -1;
 }
+
 /* site main end */
-
-.about-me-img{
+.about-me-img {
   width: 100%;
-  height:auto;
-	border-top: 2px solid #32404A;
-	border-bottom: 2px solid #32404A;
-	margin-left: 2rem;
+  height: auto;
+  border-top: 2px solid #32404A;
+  border-bottom: 2px solid #32404A;
+  margin-left: 2rem;
 }
 
-.about-me-title{
-	padding: 4rem 0rem 1rem;
-	margin-left: 2rem;
+.about-me-title {
+  padding: 4rem 0rem 1rem;
+  margin-left: 2rem;
 }
+
 .degree-text {
-	margin-left: 3rem;
-	text-align: center;
-
+  margin-left: 3rem;
+  text-align: center;
 }
 
-.degree-head{
-		padding: 1.8rem 0rem .5rem
+.degree-head {
+  padding: 1.8rem 0rem .5rem
 }
 
-.degree-title{
-padding: 1.5rem 0rem 0rem;
-	font-weight: 600;
+.degree-title {
+  padding: 1.5rem 0rem 0rem;
+  font-weight: 600;
 }
 
-.degree-head1{
-	padding-bottom: .5rem;
-}
-.degree-head2, .degree-date{
-	position: relative;
-	top: -10px;
-	font-size: 12px;
-	font-weight: 300;
+.degree-head1 {
+  padding-bottom: .5rem;
 }
 
-.degree-school-logo{
-	width: 115px;
-	height: 115px;
+.degree-head2, .degree-date {
+  position: relative;
+  top: -10px;
+  font-size: 12px;
+  font-weight: 300;
 }
 
-.degree-program h5{
-	position: relative;
-	top: -4px;
-	padding-left: 3rem;
-	text-decoration: underline;
+.degree-school-logo {
+  width: 115px;
+  height: 115px;
+}
+
+.degree-program h5 {
+  position: relative;
+  top: -4px;
+  padding-left: 3rem;
+  text-decoration: underline;
 }
 
 /* background */
-#background-area, .projects-area{
-padding: 4rem 2rem 2rem;
+#background-area, .projects-area {
+  padding: 4rem 2rem 2rem;
 }
 
 #background-area h5 {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Progress Bars */
-.skill .bars p, .skill .bars span{
-	line-height: 10px;
-}
-.progress .progress-bar{
-	background-color: black;
+.skill .bars p, .skill .bars span {
+  line-height: 10px;
 }
 
-
-.projects-area{
-	z-index: 1;
-	background: white;
+.progress .progress-bar {
+  background-color: black;
 }
 
-.projects-area a{
-	color: black;
+.projects-area {
+  background: white;
 }
+
+.projects-area a, .projects-area a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.card {
+  transition: transform .5s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background-color: #f8f9fa;
+}
+
 /* Footer*/
-.sticky-footer{
-position: sticky;
-	width: 100%;
-	height: 100%;
-	bottom: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #704E40;
-	color: black;
-	z-index: -1;
-
+.static-footer {
+  width: 100%;
+  height: 3rem;
+	padding-top: 1rem;
+  background-color: black;
+  font-weight: 400;
+  font-size: .9rem;
+  text-align: center;
 }
-#footer form .row .col input[type="text"],
-#footer form .row .col textarea{
-	border-radius: 0;
-	border: none;
-	border-bottom 1px, solid, #000;
-	padding: 1.5rem 1rem;
+
+.sticky-container{
+  position: sticky;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: : center;
+  background-color: #704E40;
+  color: black;
+}
+
+form{
+	margin: .5rem 0rem 3.5rem;
+}
+
+.form-header{
+	padding: 2.5rem 1rem .5rem;
+}
+#contact-footer form .row .col input[type="text"]
+#contact-footer form .row .col textarea {
+  border-radius: 0;
+  border: none;
+  border-bottom 1px, solid, #000;
+  padding: 1.5rem .5rem;
+}
+
+.form-subject{
+	margin-top: 1rem;
+}
+
+#contact-footer button{
+	width: 100%;
+}
+#contact-footer button:hover{
+	width: 100%;
+	background-color: black;
+	color: white;
+	border-color: black;
 }
