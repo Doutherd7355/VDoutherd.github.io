@@ -136,8 +136,8 @@ table {
 
 .hr-small {
   border: 1px solid #5C788A;
-  width: 85%;
-  margin: .5rem 2rem .3rem 0rem
+  width: 80%;
+  margin: .3rem 2rem .1rem 0rem
 }
 
 	.hr-lg {
@@ -209,7 +209,7 @@ table {
 
 .social-media {
   margin: 0 auto;
-  padding-top: 2rem;
+  padding-top: 5rem;
 }
 
 .social-media-icons a {
@@ -237,6 +237,8 @@ table {
 }
 
 /* Site Banner Area */
+
+
 .site-banner .banner-area {
   background: url('./marble.jpg') no-repeat;
   border-bottom: 2px solid #32404A;
@@ -311,12 +313,13 @@ table {
 
 .degree-head1 {
   padding-bottom: .5rem;
+	font-size: 1rem;
 }
 
 .degree-head2, .degree-date {
   position: relative;
   top: -10px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 300;
 }
 
@@ -418,3 +421,10 @@ form{
 	color: white;
 	border-color: black;
 }
+
+/* PORTFOLIO PAGE */
+
+
+
+
+/* RESUME PAGE */
