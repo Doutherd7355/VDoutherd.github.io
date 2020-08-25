@@ -4,6 +4,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>Vanessa Doutherd</title>
 
   <!--Google Fonts-->
@@ -13,22 +14,23 @@
   <link rel="stylesheet" type="text/css" href="./resources/css/global.css">
   <link rel="stylesheet" type="text/css" href="./resources/css/headfoot.css">
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/b3ce3de160.js" crossorigin="anonymous"></script>
-  <link href="//maxcdn.bootst  rapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/b3ce3de160.js" crossorigin="anonymous"></script>
 
 <body>
   <!-- Header Area -->
   <main id="site-main">
     <header id="header">
       <div class="row m-0">
-        <div class="col-2 px-0">
+        <div class="col-sm-2 px-0">
           <nav class="primary-nav navbar-expand-md bgcolor-dkpepper">
             <div class="sitetitle text-center text-light py-5">
-              <img class="navbar-brand img-fluid" src="./resources/VSD.png" alt="logo gif">
+              <img class="navbar-brand img-fluid img1" src="./resources/VSD.png" alt="logo gif">
+              <img class="navbar-brand img-fluid img2" src="./resources/VSDsolo.png" alt="logo gif">
+
             </div>
             <div class="d-flex flex-column" id="nav-menu">
               <a href="index.html" class="nav-item nav-link text-white-50 font-contentRobo font-size-13 active ">Home</a>
@@ -55,22 +57,25 @@
     </header>
 
     <div class="row m-0">
-      <div class="col-md-10 offset-2 px-0">
+      <div class="col-md-10 col-sm-12 px-0 " id="home">
         <!-- Banner Section -->
-        <section class="site-banner" id="home">
+        <section class="site-banner" >
           <div class="banner-area">
+            <button  class="toggle-button" type="button" name="button"> <span class="fas fa-bars fa-2x"></span> </button>
+
             <div class="author text-center">
-              <div class="author-img"></div>
-              <div class="author-text">
+              <div class="author-img">
+              </div>
+              <div class="author-text" id="author-txt">
                 <h1 class='text-black font-PlayBold text-uppercase py-3'>Vanessa Doutherd</h1>
-                <h5 class=" font-contentRobo text-lowercase"><span id="typed"></span></h5>
+                <h5 class=" font-contentRobo text-lowercase"><span class="txt-typed" data-wait="3000" data-words='["Educator", "Creator", "Mentor" ]'></span></h5>
               </div>
               <div class="author-text-color"></div>
             </div>
           </div>
         </section>
         <!--About Me Section -->
-        <!-- Degree Section -->
+
         <section class="about px-4 my5 bg-light" id="about-me">
           <div class="about-me-title">
             <h1 class="text-uppercase font-contentRobo font-size-27 text-black">About Me</h1>
@@ -78,27 +83,11 @@
 
           <!-- About Text -->
           <div class="row m-0">
-            <div class="col-sm-5 pl-0">
+            <div class="col-md-5 pl-0">
               <img class="img-fluid about-me-img" src="./resources/pose2.jpg" alt="">
             </div>
-            <!-- Degree Program -->
-            <div class=" degree-program col-sm-7 py-0 ">
-              <h5 class="text-uppercase font-os font-size-16 text-muted "> Degree Program</h5>
-              <div class="degree-text">
-                <div class="degree-head">
-                  <h6 class="degree-head1">
-                    University of Missouri-Colombia
-                  </h6>
-                  <h6 class="degree-head2">School of Information Science & Learning Technologies</h6>
-                </div>
-                <img class="degree-school-logo" src="./resources/mizzou.png" alt="school logo">
-                <p class="degree-title"> Ed.S. Learning Technologies & Design</p>
-                <p class="degree-date"><em>Anticipated Graduation Date: Fall 2021</em></p>
-              </div>
-            </div>
-            <!-- End Degree Program -->
-            <!-- Background -->
-            <div class="col-sm-12 " id="background-area">
+            <!-- Background Area-->
+            <div class=" background-area col-sm-12 col-md-7 " id="background-area">
               <h5 class="text-uppercase font-os font-size-16 text-muted"> Background</h5>
               <div class="background-text">
                 <p class="content-text py-2">Since I was very young, I knew I was meant for the educational field. It is one of the biggest ways that I have found which helps me achieve my calling of helping people in all capacities of life.
@@ -121,7 +110,7 @@
         <!-- Projects  -->
         <section class="projects-area px-4 py-5">
           <div class="row">
-            <div class="col-md-4 col-sm-6 mb-6 text-center">
+            <div class="col-md-4 col-sm-12 mb-6 text-center">
               <div class=" card border p-4">
                 <span class="icon text-secondary"> <i class="far fa-folder-open fa-3x"></i> </span>
                 <a href="https://css-tricks.com/" class="stretched-link project-btn">
@@ -130,7 +119,7 @@
                 <p class="font-contentRobo font-size-15 text-black-50">Explore completed projects, program reflection, and goals met during Ed.S program </p>
               </div>
             </div>
-            <div class="col-md-4 col-sm-6 mb-6 text-center">
+            <div class="col-md-4 col-sm-12 mb-6 text-center">
               <div class="card border p-4">
                 <span class="icon text-secondary"> <i class="far fa-file fa-3x"></i> </span>
                 <a href="https://css-tricks.com/" class="stretched-link project-btn">
@@ -139,7 +128,7 @@
                 <p class="font-contentRobo font-size-15 text-black-50">Learn more about my education, work experience,skills, and professional interests </p>
               </div>
             </div>
-            <div class="col-md-4 col-sm-6 mb-6 text-center">
+            <div class="col-md-4 col-sm-12 mb-6 text-center">
               <div class="card border p-4">
                 <span class="icon text-secondary"> <i class="fas fa-laptop fa-3x"></i> </span>
                 <a href="https://css-tricks.com/" class="stretched-link project-btn">
@@ -154,8 +143,8 @@
       <!-- #Projects -->
 
       <!-- TOP FOOTER -->
-      <section class="static-footer offset-2">
-        <footer id="info-footer">
+      <section class="static-footer " >
+        <footer id="info-footer" >
           <div id="info-text">
             <div class="footer2-section copyright text-secondary">
               &copy; Vanessa Doutherd 2020 | Website designed and developed by Vanessa Doutherd
@@ -164,9 +153,9 @@
         </footer>
   </main>
   </section>
-  <section class="sticky-footer offset-2 ">
+  <section class="sticky-footer  ">
     <div class="sticky-container">
-      <footer id="contact-footer" class="pt-5 px-3 ">
+      <footer id="contact-footer" class="">
         <div id="contact-form ">
           <div class="form-header">
             <h1 class="text-uppercase font-contentRobo font-size-27 text-black"> <strong>Get in Touch</strong> </h1>
@@ -201,9 +190,13 @@
     </div>
   </section>
 
-
-  <script type="text/javascript" src="index.js"></script>
-  <script type="text/javascript" src="vendor/typed/typed.min.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="vendor/typed/typed.min.js" charset="utf-8"></script>
+  <script src="index.js" charset="utf-8"></script>
 </body>
 
 

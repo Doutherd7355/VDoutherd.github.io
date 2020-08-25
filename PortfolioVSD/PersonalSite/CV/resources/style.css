@@ -1,9 +1,5 @@
 /* HOME STYLES */
-
-
 /* Site Banner Area */
-
-
 .site-banner .banner-area {
   background: url('./marble.jpg') no-repeat;
   border-bottom: 2px solid #32404A;
@@ -21,23 +17,24 @@
 }
 
 .site-banner .banner-area .author .author-img {
-  width: 240px;
-  height: 240px;
+  max-width: 15rem;
+  height: 15rem;
   border-radius: 50%;
   box-shadow: 0px 0px 20px #5C788A;
   margin: auto;
   background: url('./download.png') no-repeat;
   background-size: contain;
   position: relative;
-  top: 2rem;
+  top: -2.5rem;
 }
 
 .author-text {
   position: relative;
-  top: 3rem;
+  top: -2rem;
+  color: black;
 }
 
-.author-text-color {
+/* .author-text-color {
   background-color: white;
   margin-top: 4.7rem;
   opacity: .55;
@@ -46,7 +43,60 @@
   position: relative;
   bottom: 7rem;
   z-index: -1;
+} */
+.toggle-button {
+  display: none;
 }
+
+#home {
+  position: relative;
+  left: 14.1rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 750px){
+  .toggle-button {
+    display: inline;
+    width: 100%;
+    background: none;
+    color: black;
+    position: relative;
+    top: 1rem;
+    right: 1.5rem;
+    text-align: right;
+    border: 1px solid #5C788A;
+  }
+
+  #home {
+    position: relative;
+    left: 0rem;
+  }
+.site-banner .banner-area{
+  border-bottom: none;
+}
+  .site-banner .banner-area .author .author-img {
+    max-width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px #5C788A;
+    margin: auto;
+    background: url('./download.png') no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 2.5rem;
+  }
+  #author-txt{
+    position: relative;
+    top: 3.5rem;
+    width: 100%;
+    color: black;
+    font-size: 2rem;
+  }
+  .card{
+  margin-bottom: 1rem;
+  }
+}
+
+
 
 /* site main end */
 .about-me-img {
@@ -78,7 +128,7 @@
 
 .degree-head1 {
   padding-bottom: .5rem;
-	font-size: 1rem;
+  font-size: 1rem;
 }
 
 .degree-head2, .degree-date {
@@ -102,7 +152,7 @@
 
 /* background */
 #background-area, .projects-area {
-  padding: 4rem 2rem 2rem;
+  padding: 0rem 2rem 2rem;
 }
 
 #background-area h5 {
@@ -134,4 +184,11 @@
 .card:hover {
   transform: scale(1.1);
   background-color: #f8f9fa;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1000px) {
+  .about-me-img, .background-area h5 {
+    display: none;
+  }
 }
