@@ -53,6 +53,16 @@
   left: 14.1rem;
 }
 
+@media only screen and (min-width: 50rem) and (max-width: 65rem){
+  #home {
+    position: relative;
+    left: 9rem;
+  }
+  .social-media {
+    margin: 0 auto;
+    padding-top: 0rem;
+  }
+}
 @media only screen and (min-width: 320px) and (max-width: 750px){
   .toggle-button {
     display: inline;

@@ -51,7 +51,7 @@
   margin-left: 2rem;
 } */
 
-.about-me-title {
+.portfolio-title {
   padding: 2rem 0rem 1rem;
 }
 .portfolio-about{
@@ -114,6 +114,7 @@
   position: relative;
   top: -5.5rem;
   height: 100%;
+  z-index: 2;
 }
 
 #portfolio-area a, #portfolio-area a:hover {

@@ -4,6 +4,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-size: 12px;
 }
 
 /*Header*/
@@ -14,19 +15,20 @@ header {
   font-size: 14px;
   font-weight: bold;
   width: 100%;
-  border-bottom: 1px solid black;
-  background-color: white;
+  border-bottom: 1px solid white;
+  background-color: #FFFAF0;
   z-index: 2;
 }
+.headlink{
+  height:auto;
 
+}
 nav {
-  display: inline-flex;
+display: inline-flex;
 white-space: nowrap;
 align-items: center;
 justify-content: center;
 margin-left: 15px;
-
-
 }
 
 .logo {
@@ -42,7 +44,7 @@ margin-left: 15px;
   padding-left: 10px;
 }
 
-/*Container*/
+/* All Content main container */
 .content {
   display: flex;
   width: 100%;
@@ -59,15 +61,19 @@ margin-left: 15px;
 }
 
 .column.large {
-  width: 630px;
+  width: 650px;
+  margin-left: 1rem;
 }
 
 .column.medium {
-  width: 300px;
+  width: 325px;
+  padding-left: 1rem;
 }
 
 .column.small {
   width: 240px;
+  margin-right: 1rem;
+  border-top: .5px solid black;
 }
 
 .news-bites h3 {
@@ -84,35 +90,50 @@ margin-left: 15px;
 .bite {
   margin: 0;
   border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  background-color: WhiteSmoke;
   font-family: Verdana;
   font-size: 12px;
-  color: DimGray;
+  color: black;
   padding: 11px 20px;
+  text-align: center;
+  overflow: visible;
 }
 
-/*Images*/
-.main.image-content {
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
+.bite:hover, .headlink:hover{
+  background: #66DDAA;
+  color: #fff;
+}
+.bite a:hover{
+  color: #fff;
 }
 
-.fall-cancelled.image-content {
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
+.adds{
+
+  height: 500px;
+  text-align: center;
+  
 }
 
-.photographer.image-content {
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
+
+.add1{
+  width: 250px;
+  height: 250px;
+  background-color: #DCDCDC;
 }
 
-.cat.image-content {
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
+.add2{
+  width: 250px;
+  height: 325px;
+  background-color: #DCDCDC;
 }
 
+.adds p{
+
+}
+
+
+/* Image Content */
 .main.image-content, .fall-cancelled.image-content, .photographer.image-content, .cat.image-content {
   display: flex;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 300px;
   align-items: center;
   justify-content: center;
@@ -124,11 +145,80 @@ margin-left: 15px;
   font-weight: bold;
   color: white;
   text-align: center;
+  padding: 3rem;
 }
 
 .main.image-content span {
   font-size: 40px;
 }
+/* OVERLAYS */
+.main.image-content {
+  background: #66DDAA;  /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(rgba(102, 221, 170, 0.4), rgba(0,0,0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
+  background: linear-gradient(rgba(102, 221, 170, 0.4), rgba(0,0,0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png"); /* The least supported option. */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main.image-content:hover {
+  background: #66DDAA;  /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(rgba(102, 221, 170,0.9), rgba(0,0,0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
+  background: linear-gradient(rgba(102, 221, 170, 0.9), rgba(0,0,0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png"); /* The least supported option. */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fall-cancelled.image-content {
+  background-image: url("");
+  background: #000;  /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
+  background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png"); /* The least supported option. */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fall-cancelled.image-content:hover {
+background-image: url("");
+  background: #000;  /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(rgba(0,0,0, 0.9), rgba(0,0,0, 0.9)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
+  background: linear-gradient(rgba(0,0,0, 0.9), rgba(0,0,0, 0.9)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png"); /* The least supported option. */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photographer.image-content {
+  background-image: url("");
+  background: #000;  /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
+  background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png"); /* The least supported option. */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.photographer.image-content:hover {
+  background-image: url("");
+  background: #000;  /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(rgba(0,0,0, 0.9), rgba(0,0,0, 0.9)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
+  background: linear-gradient(rgba(0,0,0, 0.9), rgba(0,0,0, 0.9)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png"); /* The least supported option. */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cat.image-content {
+  background: #000;  /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(rgba( 102, 221, 170, 0.4), rgba(0,0,0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
+  background: linear-gradient(rgba( 102, 221, 170, 0.4), rgba(0,0,0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png"); /* The least supported option. */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cat.image-content:hover {
+  background: #000;  /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(rgba( 102, 221, 170, 0.9), rgba(0,0,0, 0.9)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
+  background: linear-gradient(rgba( 102, 221, 170, 0.9), rgba(0,0,0, 0.9)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png"); /* The least supported option. */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* END OVERLAYS */
+
 
 /*Stories*/
 p {
@@ -141,25 +231,69 @@ p {
   display: block;
 }
 
+.container-secondary1{
+margin-right: .5rem;
+}
+
+.container-secondary2{
+  margin-left: .5rem
+}
 .stories {
   display: flex;
   margin-top: 17px;
 }
 
 .story {
-  padding: 0px 15px;
+  padding: 0px 0px;
+  margin-bottom: 15px;
 }
 
 .story-text h2 {
   font-size: 30px;
   font-weight: bold;
-  margin-top: 0;
+  margin-top: .5rem;
+}
+
+.orca, .breakfast, .fbi{
+  padding: .5rem;
+}
+.orca:hover{
+  background: #50DEA0;
+}
+
+.breakfast:hover{
+  background: #8E7CDE;
+}
+
+.fbi:hover{
+  background: #DECF5B;
+}
+
+.news-block{
+  padding: 0;
 }
 
 .column.medium .story {
   padding: 0;
 }
 
+.fadeout{
+-webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+ mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+ height:  8rem;
+ width: 19.5rem;
+}
+.mainfadeout{
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+   mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+   width: 40.6rem;
+}
+
+.catfadeout{
+-webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+ mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+ width: 19.7rem;
+}
 /*Footer*/
 footer {
   display: flex;
@@ -183,11 +317,81 @@ footer .title {
   margin-right: 10px;
 }
 
+
 a {
   color: black;
   padding: 15px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .copyright {
   margin-top: 15px;
+
+}
+
+/* Media Queries */
+/*
+ * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+ */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
 }

@@ -1,0 +1,118 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: black;
+}
+
+#container {
+  width: 62.5rem;
+  height: 36rem;
+  margin: 1.3rem auto;
+  background-image: url('./resources/calcBkg.png');
+}
+
+#calculator {
+  width: 20rem;
+  height: 32.5rem;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: .5rem;
+  position: relative;
+  top: 1rem;
+  border-radius: .3rem;
+  border: 1.5mm inset #F48BF5;
+}
+
+#result {
+  height: 7.5rem;
+}
+
+#keyboard {
+  height: 25rem;
+  padding-top: .5rem;
+}
+
+#history {
+  text-align: right;
+  height: 1.3rem;
+  margin: 0 1.3rem;
+  padding-top: 1.3rem;
+  font-size: .96rem;
+  color: #919191;
+}
+
+#output {
+  text-align: right;
+  height: 3.75rem;
+  margin: .63rem 1.3rem;
+  font-size: 1.9rem;
+}
+
+.operator, .number, .empty {
+  width: 3.1rem;
+  height: 3.1rem;
+  margin: .94rem;
+  float: left;
+  border-radius: 50%;
+  border-width: 0;
+  font-weight: bold;
+  font-size: .94rem;
+}
+
+.number {
+  background-color: #eaedef;
+}
+
+.empty {
+  background-color: white;
+}
+
+.number, .operator {
+  cursor: pointer;
+  transition: transform .1s ease;
+}
+
+.number:hover, .operator:hover {
+  transform: scale(1.2);
+}
+
+.number:focus, .operator:focus {
+  outline: 0;
+}
+
+.number:active, .operator:active {
+  background-color: white;
+  color: black;
+}
+
+/* Button color change */
+/* every fourth element needs to be changed. nth-child will pick out that child from the parent. */
+button:nth-child(4) {
+  font-size: 1.3rem;
+  background-color: #f2b705;
+}
+
+button:nth-child(8) {
+  font-size: 1.3rem;
+  background-color: #07d9d9;
+}
+
+button:nth-child(12) {
+  font-size: 1.3rem;
+  background-color: #f20574;
+}
+
+button:nth-child(16) {
+  font-size: 1.3rem;
+  background-color: #05f2db;
+}
+
+button:nth-child(20) {
+  font-size: 1.3rem;
+  background-color: #1d0440;
+  color: white;
+}
+
+/* padding: 3.13rem;
+box-shadow: 0 .3rem 1rem rgba(0,0,0,.5);
+overflow: hidden;
+color: #fff; */
