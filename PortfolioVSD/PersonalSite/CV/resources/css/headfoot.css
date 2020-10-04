@@ -19,10 +19,18 @@
 #header .nav-link {
   margin: .7rem .9rem;
   text-transform: uppercase;
-  color: white !important;
+  color: white;
 }
 
-#header .nav-link:hover {
+.nav-span{
+  height: 100%;
+}
+.nav-span:hover{
+background-color: white;
+
+}
+
+#header a:hover {
   color: #87AFC9 !important;
 }
 
@@ -32,8 +40,8 @@
 
 /* site-main */
 .navbar-brand {
-  width: 10rem;
-  height: 10rem;
+  width: 11rem;
+  height: 11rem;
   margin: 0 auto;
   position: relative;
   top: -62px;
@@ -49,6 +57,8 @@
 .nav-item {
   font-weight: 300;
 }
+
+
 
 .social-media {
   margin: 0 auto;
