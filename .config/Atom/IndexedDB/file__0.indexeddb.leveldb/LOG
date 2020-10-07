@@ -1,0 +1,33 @@
+2020/10/06-19:14:17.701 373 Reusing MANIFEST /home/doutherdv/.config/Atom/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2020/10/06-19:14:17.702 373 Recovering log #445
+2020/10/06-19:14:17.838 373 Reusing old log /home/doutherdv/.config/Atom/IndexedDB/file__0.indexeddb.leveldb/000445.log 
+2020/10/06-19:23:55.470 1584 Level-0 table #450: started
+2020/10/06-19:23:55.620 1584 Level-0 table #450: 1289526 bytes OK
+2020/10/06-19:23:55.653 1584 Delete type=0 #445
+2020/10/06-19:33:06.765 1584 Compacting 2@0 + 0@1 files
+2020/10/06-19:33:06.863 1584 Generated table #451@0: 87 keys, 12446 bytes
+2020/10/06-19:33:06.863 1584 Compacted 2@0 + 0@1 files => 12446 bytes
+2020/10/06-19:33:06.878 1584 compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/10/06-19:33:06.879 1584 Delete type=2 #446
+2020/10/06-19:33:06.880 1584 Delete type=2 #450
+2020/10/06-19:41:54.312 1584 Level-0 table #453: started
+2020/10/06-19:41:54.397 1584 Level-0 table #453: 1320678 bytes OK
+2020/10/06-19:41:54.424 1584 Delete type=0 #449
+2020/10/06-19:58:42.392 1584 Compacting 1@0 + 1@1 files
+2020/10/06-19:58:42.429 1584 Generated table #454@0: 201 keys, 11404 bytes
+2020/10/06-19:58:42.429 1584 Compacted 1@0 + 1@1 files => 11404 bytes
+2020/10/06-19:58:42.445 1584 compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/10/06-19:58:42.446 1584 Delete type=2 #451
+2020/10/06-19:58:42.446 1584 Delete type=2 #453
+2020/10/06-20:07:02.330 1584 Level-0 table #456: started
+2020/10/06-20:07:02.407 1584 Level-0 table #456: 1302286 bytes OK
+2020/10/06-20:07:02.427 1584 Delete type=0 #452
+2020/10/06-20:11:26.206 1584 Compacting 1@1 + 1@2 files
+2020/10/06-20:11:26.231 1584 Generated table #457@1: 74 keys, 24307 bytes
+2020/10/06-20:11:26.232 1584 Compacted 1@1 + 1@2 files => 24307 bytes
+2020/10/06-20:11:26.243 1584 compacted to: files[ 1 0 1 0 0 0 0 ]
+2020/10/06-20:11:26.244 1584 Delete type=2 #447
+2020/10/06-20:11:26.244 1584 Delete type=2 #454
+2020/10/06-20:30:24.453 1584 Level-0 table #459: started
+2020/10/06-20:30:24.522 1584 Level-0 table #459: 1343910 bytes OK
+2020/10/06-20:30:24.538 1584 Delete type=0 #455

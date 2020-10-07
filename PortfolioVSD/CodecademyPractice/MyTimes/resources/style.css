@@ -1,6 +1,4 @@
 /*Universal Styles*/
-
-
 body {
   margin: 0;
   padding: 0;
@@ -19,16 +17,21 @@ header {
   background-color: #FFFAF0;
   z-index: 2;
 }
-.headlink{
-  height:auto;
 
+.headlink {
+  height: auto;
 }
+
 nav {
-display: inline-flex;
-white-space: nowrap;
-align-items: center;
-justify-content: center;
-margin-left: 15px;
+  display: inline-flex;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.mobile-container{
+  display: none;
 }
 
 .logo {
@@ -98,38 +101,32 @@ margin-left: 15px;
   overflow: visible;
 }
 
-.bite:hover, .headlink:hover{
+.bite:hover, .headlink:hover {
   background: #66DDAA;
   color: #fff;
 }
-.bite a:hover{
+
+.bite a:hover {
   color: #fff;
 }
 
-.adds{
-
-  height: 500px;
-  text-align: center;
-  
+/* ADD SPACE */
+.add1, .add2 {
+  display: flex;
+  margin-top: 1rem;
+  width: 250px;
+  background-color: #DCDCDC;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.add1{
-  width: 250px;
+.add1 {
   height: 250px;
-  background-color: #DCDCDC;
 }
 
-.add2{
-  width: 250px;
-  height: 325px;
-  background-color: #DCDCDC;
+.add2 {
+  height: 320px;
 }
-
-.adds p{
-
-}
-
 
 /* Image Content */
 .main.image-content, .fall-cancelled.image-content, .photographer.image-content, .cat.image-content {
@@ -151,75 +148,93 @@ margin-left: 15px;
 .main.image-content span {
   font-size: 40px;
 }
+
 /* OVERLAYS */
 .main.image-content {
-  background: #66DDAA;  /* fallback colour. Make sure this is just one solid colour. */
-  background: -webkit-linear-gradient(rgba(102, 221, 170, 0.4), rgba(0,0,0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
-  background: linear-gradient(rgba(102, 221, 170, 0.4), rgba(0,0,0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png"); /* The least supported option. */
+  background: #66DDAA;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(rgba(102, 221, 170, 0.4), rgba(0, 0, 0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
+  background: linear-gradient(rgba(102, 221, 170, 0.4), rgba(0, 0, 0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
+  /* The least supported option. */
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .main.image-content:hover {
-  background: #66DDAA;  /* fallback colour. Make sure this is just one solid colour. */
-  background: -webkit-linear-gradient(rgba(102, 221, 170,0.9), rgba(0,0,0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
-  background: linear-gradient(rgba(102, 221, 170, 0.9), rgba(0,0,0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png"); /* The least supported option. */
+  background: #66DDAA;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(rgba(102, 221, 170, 0.9), rgba(0, 0, 0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
+  background: linear-gradient(rgba(102, 221, 170, 0.9), rgba(0, 0, 0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
+  /* The least supported option. */
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .fall-cancelled.image-content {
   background-image: url("");
-  background: #000;  /* fallback colour. Make sure this is just one solid colour. */
-  background: -webkit-linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
-  background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png"); /* The least supported option. */
+  background: #000;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
+  /* The least supported option. */
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .fall-cancelled.image-content:hover {
-background-image: url("");
-  background: #000;  /* fallback colour. Make sure this is just one solid colour. */
-  background: -webkit-linear-gradient(rgba(0,0,0, 0.9), rgba(0,0,0, 0.9)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
-  background: linear-gradient(rgba(0,0,0, 0.9), rgba(0,0,0, 0.9)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png"); /* The least supported option. */
+  background-image: url("");
+  background: #000;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
+  /* The least supported option. */
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .photographer.image-content {
   background-image: url("");
-  background: #000;  /* fallback colour. Make sure this is just one solid colour. */
-  background: -webkit-linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
-  background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png"); /* The least supported option. */
+  background: #000;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
+  /* The least supported option. */
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .photographer.image-content:hover {
   background-image: url("");
-  background: #000;  /* fallback colour. Make sure this is just one solid colour. */
-  background: -webkit-linear-gradient(rgba(0,0,0, 0.9), rgba(0,0,0, 0.9)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
-  background: linear-gradient(rgba(0,0,0, 0.9), rgba(0,0,0, 0.9)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png"); /* The least supported option. */
+  background: #000;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
+  /* The least supported option. */
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .cat.image-content {
-  background: #000;  /* fallback colour. Make sure this is just one solid colour. */
-  background: -webkit-linear-gradient(rgba( 102, 221, 170, 0.4), rgba(0,0,0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
-  background: linear-gradient(rgba( 102, 221, 170, 0.4), rgba(0,0,0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png"); /* The least supported option. */
+  background: #000;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(rgba(102, 221, 170, 0.4), rgba(0, 0, 0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
+  background: linear-gradient(rgba(102, 221, 170, 0.4), rgba(0, 0, 0, 0.7)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
+  /* The least supported option. */
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .cat.image-content:hover {
-  background: #000;  /* fallback colour. Make sure this is just one solid colour. */
-  background: -webkit-linear-gradient(rgba( 102, 221, 170, 0.9), rgba(0,0,0, 0.9)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
-  background: linear-gradient(rgba( 102, 221, 170, 0.9), rgba(0,0,0, 0.9)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png"); /* The least supported option. */
+  background: #000;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(rgba(102, 221, 170, 0.9), rgba(0, 0, 0, 0.9)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
+  background: linear-gradient(rgba(102, 221, 170, 0.9), rgba(0, 0, 0, 0.9)), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
+  /* The least supported option. */
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 /* END OVERLAYS */
-
-
 /*Stories*/
 p {
   font-family: Georgia;
@@ -231,13 +246,14 @@ p {
   display: block;
 }
 
-.container-secondary1{
-margin-right: .5rem;
+.container-secondary1 {
+  margin-right: .5rem;
 }
 
-.container-secondary2{
+.container-secondary2 {
   margin-left: .5rem
 }
+
 .stories {
   display: flex;
   margin-top: 17px;
@@ -254,22 +270,23 @@ margin-right: .5rem;
   margin-top: .5rem;
 }
 
-.orca, .breakfast, .fbi{
+.orca, .breakfast, .fbi {
   padding: .5rem;
 }
-.orca:hover{
+
+.orca:hover {
   background: #50DEA0;
 }
 
-.breakfast:hover{
+.breakfast:hover {
   background: #8E7CDE;
 }
 
-.fbi:hover{
+.fbi:hover {
   background: #DECF5B;
 }
 
-.news-block{
+.news-block {
   padding: 0;
 }
 
@@ -277,23 +294,25 @@ margin-right: .5rem;
   padding: 0;
 }
 
-.fadeout{
--webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
- mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
- height:  8rem;
- width: 19.5rem;
-}
-.mainfadeout{
+.fadeout {
   -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-   mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-   width: 40.6rem;
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  height: 8rem;
+  width: 19.5rem;
 }
 
-.catfadeout{
--webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
- mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
- width: 19.7rem;
+.mainfadeout {
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  width: 40.6rem;
 }
+
+.catfadeout {
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  width: 19.7rem;
+}
+
 /*Footer*/
 footer {
   display: flex;
@@ -317,7 +336,6 @@ footer .title {
   margin-right: 10px;
 }
 
-
 a {
   color: black;
   padding: 15px;
@@ -327,71 +345,21 @@ a {
 
 .copyright {
   margin-top: 15px;
-
 }
 
-/* Media Queries */
-/*
- * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
- */
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
-/* Styles */
+.button{
+  margin-top: 1rem;
 }
-
-/* Smartphones (landscape) ----------- */
-@media only screen
-and (min-width : 321px) {
-/* Styles */
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen
-and (max-width : 320px) {
-/* Styles */
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px) {
-/* Styles */
-}
-
-/* iPads (landscape) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : landscape) {
-/* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) {
-/* Styles */
-}
-
-/* Desktops and laptops ----------- */
-@media only screen
-and (min-width : 1224px) {
-/* Styles */
-}
-
-/* Large screens ----------- */
-@media only screen
-and (min-width : 1824px) {
-/* Styles */
-}
-
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-/* Styles */
+.back-button{
+  background-color: #4CAF50; /* Green */
+ border: none;
+ color: white;
+ padding: 15px 32px;
+ background-color: #e7e7e7; color: black;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
 }
