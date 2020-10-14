@@ -53,17 +53,19 @@
   left: 14.1rem;
 }
 
-@media only screen and (min-width: 50rem) and (max-width: 65rem){
+@media only screen and (min-width: 50rem) and (max-width: 65rem) {
   #home {
     position: relative;
     left: 9rem;
   }
+
   .social-media {
     margin: 0 auto;
     padding-top: 0rem;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 750px){
+
+@media only screen and (min-width: 320px) and (max-width: 750px) {
   .toggle-button {
     display: inline;
     width: 100%;
@@ -80,9 +82,11 @@
     position: relative;
     left: 0rem;
   }
-.site-banner .banner-area{
-  border-bottom: none;
-}
+
+  .site-banner .banner-area {
+    border-bottom: none;
+  }
+
   .site-banner .banner-area .author .author-img {
     max-width: 10rem;
     height: 10rem;
@@ -94,19 +98,19 @@
     position: relative;
     top: 2.5rem;
   }
-  #author-txt{
+
+  #author-txt {
     position: relative;
     top: 3.5rem;
     width: 100%;
     color: black;
     font-size: 2rem;
   }
-  .card{
-  margin-bottom: 1rem;
+
+  .card {
+    margin-bottom: 1rem;
   }
 }
-
-
 
 /* site main end */
 .about-me-img {
@@ -197,17 +201,15 @@
 }
 
 /* FOOTER */
-
-
 /* Footer*/
-.static-footer{
+.static-footer {
   width: 100%;
   height: 3rem;
   padding-top: 1rem;
   background-color: black;
   font-weight: 400;
   font-size: .9rem;
-text-align: center;
+  text-align: center;
 }
 
 .sticky-container {
@@ -219,18 +221,17 @@ text-align: center;
   align-content: : center;
   background-color: #704E40;
   color: black;
-
 }
 
- /* #contact-footer, #info-footer{
+/* #contact-footer, #info-footer{
   position: relative;
   padding-left: 14.1rem;
 
 } */
-
 }
-@media only screen and (min-width: 320px) and (max-width: 750px){
-  #info-footer, #contact-footer{
+
+@media only screen and (min-width: 320px) and (max-width: 750px) {
+  #info-footer, #contact-footer {
     position: relative;
     padding-left: 0;
   }
