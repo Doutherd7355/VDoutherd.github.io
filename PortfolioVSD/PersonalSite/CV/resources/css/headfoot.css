@@ -22,19 +22,21 @@
 }
 
 #nav-menu .nav-span:hover {
-  background-color: #87AFC9;
+  background-color: #29353D ;
   cursor: pointer;
 }
 
 /* site-main */
 .navbar-brand {
-  width: 12rem;
-  height: 12rem;
+  max-width: 100%;
+  height: auto;
   margin: 0 auto;
   position: relative;
   top: -62px;
   left: .1rem;
 }
+
+
 
 #nav-menu {
   position: relative;
