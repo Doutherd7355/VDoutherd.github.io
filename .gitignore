@@ -1,0 +1,5 @@
+.atom/
+.cache/
+.config/
+.local/
+.pki/

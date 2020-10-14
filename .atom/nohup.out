@@ -1,4 +1,0 @@
-Fontconfig warning: "/etc/fonts/fonts.conf", line 100: unknown element "blank"
-bash: cannot set terminal process group (-1): Inappropriate ioctl for device
-bash: no job control in this shell
-** Message: Remote error from secret service: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.secrets was not provided by any .service files
