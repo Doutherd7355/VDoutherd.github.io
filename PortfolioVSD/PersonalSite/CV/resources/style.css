@@ -1,7 +1,7 @@
 /* HOME STYLES */
 /* Site Banner Area */
 .site-banner .banner-area {
-  background: url('./marble.jpg') no-repeat;
+  background: url('./marble-background.jpg') no-repeat;
   border-bottom: 2px solid #32404A;
   background-size: cover;
   width: 100%;
@@ -9,11 +9,12 @@
   position: relative;
   background: #000;
   /* fallback colour. Make sure this is just one solid colour. */
-  background: -webkit-linear-gradient(rgba(50, 64, 74, 0.2), rgba(50, 64, 74, 0.2)), url('./marble.jpg');
-  background: linear-gradient(rgba(50, 64, 74, 0.2), rgba(50, 64, 74, 0.2)), url('./marble.jpg');
+  background: -webkit-linear-gradient(rgba(50, 64, 74, 0.1), rgba(50, 64, 74, 0.1)), url('./marble-background.jpg');
+  background: linear-gradient(rgba(50, 64, 74, 0.1), rgba(50, 64, 74, 0.1)), url('./marble-background.jpg');
   /* The least supported option. */
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
 
@@ -36,13 +37,28 @@
   position: relative;
   top: -2.5rem;
 }
-
+/* OLD AUTHOR TEXT */
 .author-text {
   position: relative;
   top: -2rem;
   color: black;
+
 }
 
+
+/* AUTHOR TEXT ANIMATION */
+
+
+
+
+
+
+
+
+
+
+
+/* A/UTHOR TEXT ANIMATION */
 #toggle-menu{
   display: none;
 }
@@ -114,6 +130,7 @@ padding-top: 1rem;
     width: 100%;
     color: black;
     font-size: 2rem;
+
   }
 
   .card {
