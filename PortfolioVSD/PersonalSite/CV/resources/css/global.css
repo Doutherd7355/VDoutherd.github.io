@@ -84,15 +84,16 @@ table {
   font-weight: 800;
 }
 
-.font-contentRobo {
-  font-family: 'Roboto', sans-serif;
+.font-contentSans {
+  font-family: 'DM Sans', sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
 
+
 .content-text {
-  font-family: 'Lora', sans-serif;
-  font-size: 15px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16spx;
   line-height: 1.4rem;
   color: #29353D;
 }
