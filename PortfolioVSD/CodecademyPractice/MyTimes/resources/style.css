@@ -14,7 +14,7 @@ header {
   font-weight: bold;
   width: 100%;
   border-bottom: 1px solid white;
-  background-color: #FFFAF0;
+  background-color: #ffffff;
   z-index: 2;
 }
 
@@ -27,7 +27,7 @@ nav {
   white-space: nowrap;
   align-items: center;
   justify-content: center;
-  margin-left: 15px;
+  margin-right: 2.9rem;
 }
 
 .mobile-container{
@@ -38,13 +38,14 @@ nav {
   display: flex;
   align-items: center;
   color: mediumaquamarine;
-  width: 75%;
-  margin-bottom: 10px;
-  margin-left: 20px;
+  width: 100%;
+  margin-bottom: 1.6rem;
+  margin-left: 3.5rem;
 }
 
 .logo span {
-  padding-left: 10px;
+  padding-left: .8rem;
+  font-size: 1rem;
 }
 
 /* All Content main container */
@@ -70,7 +71,7 @@ nav {
 
 .column.medium {
   width: 325px;
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
 }
 
 .column.small {
@@ -334,6 +335,10 @@ footer .title {
   border-width: thin;
   padding-right: 15px;
   margin-right: 10px;
+}
+
+.info a:hover{
+color: #fff;
 }
 
 a {
