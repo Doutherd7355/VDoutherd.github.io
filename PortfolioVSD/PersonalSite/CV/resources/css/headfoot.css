@@ -5,6 +5,7 @@
   left: 0;
   width: 100%;
   transition: left .5s ease;
+  z-index: 1;
 }
 
 #header nav {
@@ -28,7 +29,7 @@
 
 /* site-main */
 .navbar-brand {
-  max-width: 100%;
+  width: 99%;
   height: auto;
   margin: 0 auto;
   position: relative;

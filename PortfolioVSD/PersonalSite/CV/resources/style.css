@@ -2,9 +2,9 @@
 /* Site Banner Area */
 .site-banner .banner-area {
   background: url('./marble-background.jpg') no-repeat;
-  border-bottom: 2px solid #32404A;
+  /* border-bottom: 2px solid #32404A; */
   background-size: cover;
-  width: 100%;
+  width: 102%;
   height: 100vh;
   position: relative;
   background: #000;
@@ -105,6 +105,7 @@ padding-top: 1rem;
   #home {
     position: relative;
     left: 0rem;
+   
   }
 
   .site-banner .banner-area {
@@ -138,7 +139,10 @@ padding-top: 1rem;
   }
 }
 
-/* site main end */
+/* main banner end */
+#about-me{
+  width: 102%;
+}
 .about-me-img {
   width: 100%;
   height: auto;
@@ -250,7 +254,6 @@ padding-top: 1rem;
 /* #contact-footer, #info-footer{
   position: relative;
   padding-left: 14.1rem;
-
 } */
 }
 
