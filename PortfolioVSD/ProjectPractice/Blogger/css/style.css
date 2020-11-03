@@ -1,0 +1,62 @@
+html, body{
+    margin:0;
+    box-sizing: 0;
+    overflow-x:hidden;
+}
+
+/* Global Classes */
+
+a{
+    text-decoration: none;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+/* /Global Classes */
+
+/********************* Navbar **********************/
+.nav{
+    background: white;
+    padding: .2rem;
+    /* makes collapsible responsive hamburger */
+    height: 0rem;
+    min-height: 10vh;
+        /************************** */
+
+    overflow: hidden;
+}
+.nav .nav-menu{
+    justify-content: space-between;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+}
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+}
+
+.nav .social{
+    padding: 1.4rem 0;
+}
+
+
+
+
+/********************* /Navbar **********************/
