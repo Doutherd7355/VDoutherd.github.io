@@ -1,0 +1,28 @@
+
+/* Abel Font */
+@font-face{
+    font-family: 'Abel', sans-serif;
+src: url(../fonts/Abel-Regular.ttf);
+}
+/* /Abel Font */
+
+/* /Livvic Font */
+@font-face{
+    font-family: 'Livvic', sans-serif;
+src: url(../fonts/Livvic-Regular.ttf);
+}
+/* /Livvic Font */
+
+/* /Anton Font */
+@font-face{
+    font-family: 'Anton', sans-serif;
+src: url(../fonts/Anton-Regular.ttf);
+}
+/* /Anton Font */
+
+/* /Josefin Font */
+@font-face{
+    font-family: 'Josefin Sans', sans-serif;
+src: url(../fonts/Josefin-Regular.ttf);
+}
+/* /Josefin Font */
