@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,900&display=swap');
+
+html{
+  margin:0;
+  padding:0;
+}
+body{
+ 
+}
+
+:root{
+
+  /* Theme Colors */
+
+--yellow00: #D99E32;
+--yellow01: #F6E8CE;
+--yellow02: #FCF8F0;
+--yellow03: #32404A;
+
+/* Complementary Colors */
+
+--blue00: #32404A;
+--blue01: #222C33;
+
+/* TextSize */
+--contentsize: 1rem;
+--headersize: 4rem;
+--lgheadsize:14.5rem;
+}
+
+/******************* Global Classes */
+
+/* Typography */
+.headertxt{
+  color: #32404A;
+  font-family:'Playfair Display', serif;
+  -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.contenttxt0{
+  color: #222c33;
+  font-family: 'Roboto', monospace;
+}
+.contenttxt1{
+  color: #000;
+  font-family: 'Roboto', monospace;
+}
+.elipsestyle{
+  height:100vh;
+}
+
+/******************* END Global Classes */
+/******************* Main Styles */
+.banner_container{
+  max-width: 100%;
+}
+
+.right_semi_circle{
+  width: 40%;
+  height: 100vh;
+  float: right;
+  z-index: -1;
+}
+
+.middle_semi_circle, .profile_image{
+  width: 35%;
+  position: absolute;
+  margin-left: 34rem;
+}
+
+.middle_semi_circle1{
+  width: 40%; 
+float: top;
+position: absolute;
+}
+
+.profile_image{
+  width: 25%;
+  border-radius: 50%;
+  margin-top: 10.8rem;
+  margin-left: 38.8rem;
+  border:2.5px solid white;
+}
+
+.profile_lines{
+  position: absolute;
+  margin-left: 24rem;
+  margin-top: 1.5rem;
+  z-index: 2;
+}
+
+.sitetitle{
+  margin-left: 66.5rem;
+  margin-top: 13.3rem;
+  position: absolute;
+  float: left;
+}
+.sitetitle p{
+  font-size: 12.5rem;
+  
+}

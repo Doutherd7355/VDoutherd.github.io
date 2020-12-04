@@ -3,11 +3,22 @@ html, body{
     box-sizing: 0;
     overflow-x:hidden;
 }
+:root{
+    /* Theme colors */
+    --textGray: #3f4954;
+    /* theme font */
+    --AbelTheme:'Abel',cursive;
+    --Anton:'Anton',cursive;
+    --Josefin: 'Josefin',cursive;
+    --Lexend:'Lexend',cursive;
+    --Livvic: 'Livvic', cursive;
+}
 
 /* Global Classes */
 
 a{
     text-decoration: none;
+    color: var(--textGray);
 }
 
 .flex-row{
@@ -50,6 +61,7 @@ ul{
     font-size: 1.6rem;
     padding: 1rem 0;
     display: block;
+    font-family:var(--AbelTheme);
 }
 
 .nav .social{

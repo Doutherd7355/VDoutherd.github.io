@@ -41,33 +41,37 @@ h3 {
 }
 
 /* Pepper Color Blue Hue */
-.blue_00 {
-  background-color: #87AFC9;
+.themecol_00 {
+  background-color: #D99E32;
 }
 
-.blue_01 {
-  background-color: #5C788A;
+.themecol_01 {
+  background-color: #ebce98;
 }
 
-.blue_02 {
-  background-color: #29353D;
+.themecol_02 {
+  background-color: #F6E8Ce;
 }
 
-.blue_03 {
+.themecol_03 {
+  background-color: #fcf8f0;
+}
+
+.themecol_04 {
   background-color: #32404A;
 }
-.blue_04 {
+/* .themecol_05 {
   background-color: #222C33;
-}
+} */
 
 /* Complement and compound color (in that order) */
 
 .comp_00{
-  background-color: #8A746A;
+  background-color: #32404A;
 }
-.comp_01{
+/* .comp_01{
   background-color: #704E40;
-}
+} */
 
 
 /* Typography */
