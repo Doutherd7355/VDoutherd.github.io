@@ -68,6 +68,8 @@ h3 {
 
 .comp_00{
   background-color: #32404A;
+  color: white;
+  text-align: center;
 }
 /* .comp_01{
   background-color: #704E40;
@@ -81,11 +83,10 @@ h3 {
 
 /* Playfair Font  for headlines*/
 .font_00 {
-  font-family: 'Playfair Display', serif;
-}
+  Font-Family: 'Abril Fatface', Cursive;}
 
 .font_00 .fontreg {
-  font-weight: 400;
+  font-weight: ;
 }
 
 .font_00 .fontmed {
@@ -104,7 +105,7 @@ h3 {
 
 /* Roboto */
 .font_01 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', Sans-Serif;
 }
 
 .font_01 .fontthin {

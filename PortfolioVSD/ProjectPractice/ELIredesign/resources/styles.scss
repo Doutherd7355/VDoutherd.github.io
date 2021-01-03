@@ -1,0 +1,127 @@
+/* CSS RESET -- http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: #025939;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* END CSS RESET */
+
+/* GLOBAL CLASSES */
+:root{
+	/* COLORS */
+	--light-green-color:#025939;
+	--dark-green-color: #03402A;
+    --primary-btn-color: #D9CE36;
+    --secondary-btn-color: #037067;
+	/* END COLORS */
+	/* TEXT */
+	--Heading-transform: 
+	/* END TEXT */
+}
+
+/* TEXT */
+
+.main-text-transform{
+	text-transform: capitalize;
+	font-family: 'Oxygen', sans-serif;
+}
+.primary-heading-txt{
+	font-size: 3.44rem;
+	color: white;
+}
+
+.leading-heading-txt{
+		font-size: 2.25rem;
+		color: black;
+	}
+
+.info-heading-txt{
+	font-size: 2.25rem;
+	color: white;
+}
+
+.nav-txt{
+	font-family: 'Oxygen', sans-serif;
+	font-size: 1.25rem;
+	color: black;
+}
+
+.content-txt{
+    font-family: 'Noto Serif', serif;
+	font-size: 1rem;
+	color: black;
+	line-height: 150%;
+}
+/* END TEXT */
+
+/* BUTTONS */
+.btn{
+	font-size:1.25rem;
+	color: white;
+}
+.btn-primary {
+background-color: var(--primary-btn-color);
+}
+
+.btn-secondary{
+background-color: var(--secondary-btn-color);
+}
+/* END BUTTONS */
+/* END GLOBAL CLASSES */
+
+/* 
+	HOMEPAGE
+1. Section 1- Navigation & Banners
+2. Section 2- Our Programs
+3. Section 3- Application & Visa Info
+4. Section 4- Staying with us
+5. Section 5- Testimonials
+6. Section 6- More Options
+7. Main Footer & Contact Footer
+
+*/
+
+/* SECTION 1- NAVIGATION & BANNERs */
