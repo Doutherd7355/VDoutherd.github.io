@@ -1,0 +1,228 @@
+$primaryyellow: #E7C37B;
+$secondaryyellow: #F6E8CE;
+$darkshadeyellow: #D99E32;
+$complementaryblue: #32404A;
+$mainheadtxt: 'Abril Fatface', cursive;
+$secondaryheadtxt: 'Poppins', sans-serif;
+
+
+
+@mixin navTxt ($navFontSize) {
+    font-family: 'Poppins', sans-serif;
+    font-size: $navFontSize;
+    text-transform: uppercase;
+}
+
+@mixin flexContent ($direction, $contentSpacing) {
+    display: flex;
+    justify-content: $contentSpacing;
+
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin fullSpan {
+    max-width: 100vw;
+    height: 100vh;
+}
+
+@mixin positionChange ($top, $right, $bottom, $left) {
+    position: relative;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+
+
+// styles start
+
+
+body {
+    background: url(../mainbkg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.section-1 {
+    @include fullSpan();
+    margin: 0;
+    padding: 0;
+
+    header {
+
+        nav {
+            width: 50%;
+            position: relative;
+            margin: 0 auto;
+            @include positionChange(5rem, 0, 0, 0);
+            @include navTxt(1.2rem);
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            a {
+                color: #000;
+            }
+
+            li {
+                display: inline;
+
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+
+                &:active {
+                    text-decoration: none;
+                }
+            }
+
+
+        }
+
+        
+    }
+
+    .banner {
+
+        .profile-info {
+            @include positionChange(8rem, 0, 0, 0);
+            text-align: center;
+
+            .profile-info-top {
+                @include flexContent(column, center);
+
+                .profile-pic img {
+                    max-width: 18%;
+                    display: block;
+                    margin: 0 auto;
+                    border-radius: 100%;
+                    border: 1.2rem solid $primaryyellow;
+                }
+
+                .profile-txt {
+                    @include positionChange(3rem, 0, 0, 0);
+
+                    h1 {
+                        font-family: $mainheadtxt;
+                    }
+
+                    h2 {
+                        font-family: $secondaryheadtxt;
+                        padding-top: .9rem;
+                        font-size: 1.8rem;
+                    }
+
+                    .scroll-indicator {
+                        width: 1.5rem;
+                        margin: 0 auto;
+                        position: relative;
+                        top: 2.5rem;
+                        opacity: .5;
+
+                        &::before,
+                        &::after {
+                            content: '';
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+
+                      
+                        &::before {
+                            width: .8rem;
+                            height: .8rem;
+                            border-radius: 50%;
+                            background-color: $darkshadeyellow;
+                            animation: dot 2s infinite ease-in-out;
+                        }
+
+                      
+                        &::after {
+                            width: .5rem;
+                            height: .5rem;
+                            border-right: 2px solid $primaryyellow;
+                            border-bottom: 2px solid $primaryyellow;
+                            transform: rotate(45deg);
+                            animation: arrow 2s infinite ease-in-out;
+                            animation-delay: .50s;
+                            opacity: .25;
+                        }
+
+                        
+                        &>div {
+                            display: block;
+
+                            &::before,
+                            &::after {
+                                content: '';
+                                display: block;
+                                margin: .2rem auto;
+                                border-radius: 50%;
+                                background-color: $darkshadeyellow;
+                                animation: dot 2s infinite ease-in-out;
+                            }
+
+                            &::before {
+                                width: .5rem;
+                                height: .5rem;
+                                animation-delay: .25s;
+                            }
+
+                            &::after {
+                                width: .4rem;
+                                height: .4rem;
+                                animation-delay: .5s;
+                            }
+                        }
+                    }
+
+                    @keyframes dot {
+                        0% {
+                            transform: scale(.75);
+                            opacity: .25;
+                        }
+
+                        25% {
+                            transform: scale(1);
+                            opacity: 1;
+                        }
+
+                        100% {
+                            transform: scale(.75);
+                            opacity: .25;
+                        }
+                    }
+
+                    @keyframes arrow {
+                        0% {
+                            transform: scale(.75) rotate(45deg);
+                            opacity: .25;
+                        }
+
+                        25% {
+                            transform: scale(1) rotate(45deg);
+                            opacity: 1;
+                        }
+
+                        100% {
+                            transform: scale(.75) rotate(45deg);
+                            opacity: .25;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+// 2. Section- Projects
