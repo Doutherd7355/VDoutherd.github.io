@@ -16,7 +16,7 @@ body {
   position: relative;
   margin: 0 auto;
   position: relative;
-  top: 5rem;
+  top: 4rem;
   right: 0;
   bottom: 0;
   left: 0;
@@ -90,7 +90,7 @@ body {
   border: 1.2rem solid #E7C37B;
 }
 
-.section-1 .banner .profile-info .profile-info-top .profile-txt {
+.section-1 .banner .profile-info .profile-txt {
   position: relative;
   top: 3rem;
   right: 0;
@@ -98,87 +98,62 @@ body {
   left: 0;
 }
 
-.section-1 .banner .profile-info .profile-info-top .profile-txt .profile-h1 {
-  font-family: "Abril Fatface", cursive;
+.section-1 .banner .profile-info .profile-txt h1 {
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 1px;
 }
 
-.section-1 .banner .profile-info .profile-info-top .profile-txt h2 {
+.section-1 .banner .profile-info .profile-txt h2 {
   font-family: "Poppins", sans-serif;
   padding-top: .9rem;
   font-size: 1.8rem;
 }
 
-.section-1 .banner .profile-info .profile-info-top .profile-txt .scroll-indicator {
-  width: 1.5rem;
+.section-1 .banner .profile-info .profile-txt .scroll-indicator {
+  width: 2rem;
   margin: 0 auto;
   position: relative;
   top: 2.5rem;
   opacity: .5;
 }
 
-.section-1 .banner .profile-info .profile-info-top .profile-txt .scroll-indicator::before, .section-1 .banner .profile-info .profile-info-top .profile-txt .scroll-indicator::after {
+.section-1 .banner .profile-info .profile-txt .scroll-indicator::before, .section-1 .banner .profile-info .profile-txt .scroll-indicator::after {
   content: '';
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.section-1 .banner .profile-info .profile-info-top .profile-txt .scroll-indicator::before {
-  width: .8rem;
-  height: .8rem;
-  border-radius: 50%;
+.section-1 .banner .profile-info .profile-txt .scroll-indicator::before {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
   background-color: #D99E32;
-  -webkit-animation: dot 2s infinite ease-in-out;
-          animation: dot 2s infinite ease-in-out;
+  -webkit-animation: dot 1.5s infinite ease-in-out;
+          animation: dot 1.5s infinite ease-in-out;
 }
 
-.section-1 .banner .profile-info .profile-info-top .profile-txt .scroll-indicator::after {
-  width: .5rem;
-  height: .5rem;
-  border-right: 2px solid #E7C37B;
-  border-bottom: 2px solid #E7C37B;
+.section-1 .banner .profile-info .profile-txt .scroll-indicator::after {
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  top: -.4rem;
+  border-right: 2px solid #D99E32;
+  border-bottom: 2px solid #D99E32;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  -webkit-animation: arrow 2s infinite ease-in-out;
-          animation: arrow 2s infinite ease-in-out;
-  -webkit-animation-delay: .50s;
-          animation-delay: .50s;
-  opacity: .25;
-}
-
-.section-1 .banner .profile-info .profile-info-top .profile-txt .scroll-indicator > div {
-  display: block;
-}
-
-.section-1 .banner .profile-info .profile-info-top .profile-txt .scroll-indicator > div::before, .section-1 .banner .profile-info .profile-info-top .profile-txt .scroll-indicator > div::after {
-  content: '';
-  display: block;
-  margin: .2rem auto;
-  border-radius: 50%;
-  background-color: #D99E32;
-  -webkit-animation: dot 2s infinite ease-in-out;
-          animation: dot 2s infinite ease-in-out;
-}
-
-.section-1 .banner .profile-info .profile-info-top .profile-txt .scroll-indicator > div::before {
-  width: .5rem;
-  height: .5rem;
-  -webkit-animation-delay: .25s;
-          animation-delay: .25s;
-}
-
-.section-1 .banner .profile-info .profile-info-top .profile-txt .scroll-indicator > div::after {
-  width: .4rem;
-  height: .4rem;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
+  -webkit-animation: arrow 1.5s infinite ease-in-out;
+          animation: arrow 1.5s infinite ease-in-out;
+  -webkit-animation-delay: .15s;
+          animation-delay: .15s;
+  opacity: .75;
 }
 
 @-webkit-keyframes dot {
   0% {
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
-    opacity: .25;
+    opacity: .35;
   }
   25% {
     -webkit-transform: scale(1);
@@ -188,7 +163,7 @@ body {
   100% {
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
-    opacity: .25;
+    opacity: .35;
   }
 }
 
@@ -196,7 +171,7 @@ body {
   0% {
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
-    opacity: .25;
+    opacity: .35;
   }
   25% {
     -webkit-transform: scale(1);
@@ -206,7 +181,7 @@ body {
   100% {
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
-    opacity: .25;
+    opacity: .35;
   }
 }
 
@@ -214,7 +189,7 @@ body {
   0% {
     -webkit-transform: scale(0.75) rotate(45deg);
             transform: scale(0.75) rotate(45deg);
-    opacity: .25;
+    opacity: .35;
   }
   25% {
     -webkit-transform: scale(1) rotate(45deg);
@@ -224,7 +199,7 @@ body {
   100% {
     -webkit-transform: scale(0.75) rotate(45deg);
             transform: scale(0.75) rotate(45deg);
-    opacity: .25;
+    opacity: .35;
   }
 }
 
@@ -232,7 +207,7 @@ body {
   0% {
     -webkit-transform: scale(0.75) rotate(45deg);
             transform: scale(0.75) rotate(45deg);
-    opacity: .25;
+    opacity: .35;
   }
   25% {
     -webkit-transform: scale(1) rotate(45deg);
@@ -242,7 +217,7 @@ body {
   100% {
     -webkit-transform: scale(0.75) rotate(45deg);
             transform: scale(0.75) rotate(45deg);
-    opacity: .25;
+    opacity: .35;
   }
 }
 /*# sourceMappingURL=styles.css.map */
