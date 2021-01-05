@@ -263,6 +263,16 @@ body {
   grid-area: 2/2/2/3;
 }
 
+.section-2 .projects .p2 .image-circle {
+  width: 10rem;
+  height: 10rem;
+  background-color: #F6E8CE;
+  border-radius: 50%;
+  -ms-grid-row: 2;
+  grid-area: 2;
+  position: absolute;
+}
+
 .section-2 .projects .p3 {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
@@ -293,19 +303,6 @@ body {
           box-shadow: -20px 0px 0px 30px #32404A;
   max-width: 270px;
   min-width: 100px;
-}
-
-.section-2 .project-content .image-circle {
-  width: 10rem;
-  height: 10rem;
-  background-color: #F6E8CE;
-  border-radius: 50%;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: 1/1/1/1;
-  position: absolute;
-  -ms-grid-column-align: start;
-      justify-self: start;
 }
 
 .section-2 .project-content .project-title {

@@ -330,6 +330,16 @@ body {
 
         .p2 {
             grid-area: 2/2/2/3;
+
+            .image-circle {
+                width: 10rem;
+                height: 10rem;
+                background-color: $secondaryyellow;
+                border-radius: 50%;
+                grid-area: 2;
+                position: absolute;
+                
+            }
         }
 
         .p3 {
@@ -351,17 +361,6 @@ body {
             min-width: 100px;
         }
 
-        .image-circle {
-            width: 10rem;
-            height: 10rem;
-            background-color: $secondaryyellow;
-            border-radius: 50%;
-            grid-area: 1/1/1/1;
-            position: absolute;
-           justify-self: ;
-         
-        
-        }
 
         .project-title {
             grid-area: 1/2/1/3;
