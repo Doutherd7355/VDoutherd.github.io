@@ -10,8 +10,9 @@
   <!--Stylesheets-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="./resources/styles/main.scss">
+
   <link rel="stylesheet" href="./resources/styles/main.css">
+  <link rel="stylesheet" href="./resources/styles/main.scss">
 
 
   <script src="https://kit.fontawesome.com/b3ce3de160.js" crossorigin="anonymous"></script>
@@ -29,7 +30,7 @@
 
 <body>
 
-  <div class="container section-1">
+  <div class="container-fluid section-1">
 
     <header>
       <nav>
@@ -67,7 +68,7 @@
         <div class="image-circle"></div>
         <div class="project-content p1">
 
-          <img class="project-image" src="./resources/learning_design_pic.png" alt="learning design photo">;
+          <img class="project-image" src="./resources/learning_design_pic.png" alt="learning design photo">
 
           <div class="project-title">
             <h1>Learning Design </h1>
@@ -127,7 +128,7 @@
         <div class="image-circle"></div>
         <div class="project-content">
 
-          <img class="project-image" src="./resources/learning_design_pic.png" alt="learning design photo">;
+          <img class="project-image" src="./resources/learning_design_pic.png" alt="learning design photo">
 
           <div class="project-title">
             <h1>Learning Design </h1>
@@ -186,7 +187,7 @@
         <div class="image-circle"></div>
         <div class="project-content p1">
 
-          <img class="project-image" src="./resources/learning_design_pic.png" alt="learning design photo">;
+          <img class="project-image" src="./resources/learning_design_pic.png" alt="learning design photo">
 
           <div class="project-title">
             <h1>Learning Design </h1>
@@ -241,12 +242,74 @@
         <!-- END CAROUSEL  3-->
       </div>
       <!-- END Project 3 -->
-
+      </section>
     </div>
   </main>
+  <section class="section-3">
+    <div class="container-fluid col-sm-12">
+      <div class="row">
+        <footer class="static-footer ">
+          <div class="foot-info">
+            <p class="copyright">&copy; Vanessa Doutherd 2021 | Website designed & developed by Vanessa Doutherd</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <div class="container-fluid sticky-footer">
+      <!-- Sticky Footer Links -->
+
+      <div class="row">
+        <div class="links col-sm-12 col-md-6">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Me</a></li>
+            <li><a href="">LDSS Portfolio</a></li>
+            <li><a href="">Web Development</a></li>
+            <li><a href="">UX/UI</a></li>
+          </ul>
+        </div>
 
 
+        <!-- Sticky Footer Contact Form -->
+        <div class="form-content col-sm-12 col-md-6">
+          <div class="contact-head ">
+            <div class="form-header">
+              <div class="title-circle-foot"></div>
+              <h1><strong>Get in Touch</strong></h1>
+              <p>doutherdv@gmail.com</p>
+              <hr class="hr-lg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="contact-footer-form">
+              <form action="mailto:doutherdv@gmail.com" method="POST" enctype="text/plain">
+                <div class="row">
+                  <div class="col-sm-12 form-text ">
+                    <input type="text" class="form-control form-name bg-color-light" placeholder="Name" name="name"
+                      value="" required>
+                  </div>
 
+                  <div class="col-sm-12 form-text">
+                    <input type="text" class="form-control form-email bg-color-light" placeholder="Email" name="email"
+                      value="" required>
+                  </div>
+
+
+                  <div class="col-sm-12 form-text">
+                    <input type="text" class="form-control form-subject" placeholder="Subject" name="subject" value=""
+                      required>
+                  </div>
+                  <textarea name="message" rows="6" cols="45" class="form-control form-message my-4"
+                    placeholder="Message" required></textarea>
+                  <button type="submit" class=" btn" name="button">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <!-- <script src="./index.js"></script> -->
