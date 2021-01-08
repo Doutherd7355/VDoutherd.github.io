@@ -17,20 +17,20 @@
 
       .sticky-footer {
           background-color: $primaryyellow;
-          position: sticky;
+          
 
           .links {
-            padding: 18rem 0rem;
+            padding: 16rem;
           
               ul {
 
-                  text-align: center;
+                  
 
                   li {
                       padding-bottom: 3rem;
 
                       a {
-                          @include contentTxt (1rem, $complementaryblue);
+                          @include contentTxt (1rem, black);
                           text-transform: uppercase;
                       }
 
