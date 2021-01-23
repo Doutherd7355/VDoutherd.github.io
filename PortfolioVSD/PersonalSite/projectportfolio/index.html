@@ -1,253 +1,72 @@
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap/Styles CSS -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="./resources/styles/styles.css">
   <title>Vanessa Doutherd</title>
-
-  <!--Google Fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins:300" rel="stylesheet">
-  <!--Stylesheets-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="./resources/styles/main.css">
-  <link rel="stylesheet" href="./resources/styles/main.scss">
-
-
-  <script src="https://kit.fontawesome.com/b3ce3de160.js" crossorigin="anonymous"></script>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-  </script>
 </head>
 
 <body>
 
-  <div class="container-fluid section-1">
+  <nav class="navbar navbar-expand-lg " id="mainNavigation" aria-label="main top navigation">
+    <div class="container-fluid ">
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#mainNavMenu" aria-controls="mainNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
 
-    <header>
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About Me</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Contact</a></li>
+      <div class="collapse navbar-collapse justify-content-lg-center" id="mainNavMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item px-5 active">
+            <a class="nav-link navTxt" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item px-5 mid-nav">
+            <a class="nav-link navTxt" href="#">Resume</a>
+          </li>
+          <li class="nav-item px-5">
+            <a class="nav-link navTxt" href="#">Contact</a>
+          </li>
         </ul>
-      </nav>
-    </header>
-
-    <div class="banner">
-      <div class="profile-info">
-        <div class="profile-info-top">
-          <div class="profile-pic">
-            <img src="./resources/profile_pic_main.jpg" alt="profile photo">
-          </div>
-        </div>
-        <div class="profile-txt">
-          <h1>Vanessa Doutherd</h1>
-          <h2>Learning Designer & Technologist</h2>
-          <div class="scroll-indicator">
-            <div class="dots"></div>
-          </div>
-        </div>
       </div>
     </div>
+  </nav>
+
+
+  <div class="container-fluid">
+
+    <div class=" row profile-info">
+
+      <div class="profile-pic">
+        <img class="img-fluid" src="./resources/profile_pic_main.jpg" alt="profile photo">
+      </div>
+
+      <div class="profile-txt">
+        <h1 class="contentTxt">Vanessa Doutherd</h1>
+        <h2 class="navTxt">Learning Designer & Technologist</h2>
+        
+          <div class="scroll-indicator"></div>
+    
+      </div>
+    </div>
+
   </div>
+
   <!-- BEGIN PROJECTS -SECTION2 -->
-  <main class="container section-2">
-    <div class="projects">
-
-      <div class="project p1">
-        <div class="image-circle"></div>
-        <div class="project-content p1">
-
-          <img class="project-image" src="./resources/learning_design_pic.png" alt="learning design photo">
-
-          <div class="project-title">
-            <h1>Learning Design </h1>
-            <div class="title-circle"></div>
-          </div>
-          <div class="project-details">
-            LSDD Portfolio. See the contents of my instructional design portfolio for the Learning Technology and Design
-            EdS program at University of Missouri.
-          </div>
 
 
-          <!-- CAROUSEL 1-->
-          <div class="container-fluid carousel1">
-            <hr>
-            <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="9000">
-              <div class="carousel-inner row w-100 mx-auto" role="listbox">
-                <div class="carousel-item col-md-3 active">
-                  <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400/000/fff?text=1" alt="slide 1">
-                </div>
-                <div class="carousel-item col-md-3">
-                  <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=2" alt="slide 2">
-                </div>
-                <div class="carousel-item col-md-3">
-                  <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=3" alt="slide 3">
-                </div>
-                <div class="carousel-item col-md-3">
-                  <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=4" alt="slide 4">
-                </div>
-                <div class="carousel-item col-md-3">
-                  <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=5" alt="slide 5">
-                </div>
-                <div class="carousel-item col-md-3">
-                  <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=6" alt="slide 6">
-                </div>
-                <div class="carousel-item col-md-3">
-                  <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=7" alt="slide 7">
-                </div>
-                <div class="carousel-item col-md-3">
-                  <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=8" alt="slide 7">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-                <i class="fa fa-chevron-left fa-lg text-muted"></i>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
-                <i class="fa fa-chevron-right fa-lg text-muted"></i>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- END CAROUSEL  1-->
-      </div>
-      <!-- END Project 1 -->
-      <!-- Project 2 -->
-      <div class=" project p2 project-middle-flipped">
-        <div class="image-circle"></div>
-
-        <div class="project-content project-middle-content">
-
-          <img class="project-image project-middle-image" src="./resources/web_dev_pic.jpg" alt="learning design photo">
-
-          <div class="project-title project-middle-title">
-            <h1>Web Dev </h1>
-            <div class="title-circle tc-reposition"></div>
-          </div>
-          <div class="project-details project-middle-details">
-            See websites and applications I have designed and developed using Front-End processes and tools.
-          </div>
-        
-          <!-- CAROUSEL 2-->
-          <div class="container-fluid carousel2">
-            <hr>
-            <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="9000">
-              <div class="carousel-inner row w-100 mx-auto" role="listbox">
-                <div class="carousel-item col-md-3 active">
-                  <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400/000/fff?text=1" alt="slide 1">
-                </div>
-                <div class="carousel-item col-md-3">
-                  <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=2" alt="slide 2">
-                </div>
-                <div class="carousel-item col-md-3">
-                  <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=3" alt="slide 3">
-                </div>
-                <div class="carousel-item col-md-3">
-                  <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=4" alt="slide 4">
-                </div>
-                <div class="carousel-item col-md-3">
-                  <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=5" alt="slide 5">
-                </div>
-                <div class="carousel-item col-md-3">
-                  <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=6" alt="slide 6">
-                </div>
-                <div class="carousel-item col-md-3">
-                  <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=7" alt="slide 7">
-                </div>
-                <div class="carousel-item col-md-3">
-                  <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=8" alt="slide 7">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-                <i class="fa fa-chevron-left fa-lg text-muted"></i>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
-                <i class="fa fa-chevron-right fa-lg text-muted"></i>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-          <!-- END CAROUSEL  2-->
-        </div>
-      </div>
-      <!-- Project 3 -->
-      <div class="project p3">
-        <div class="image-circle"></div>
-        <div class="project-content p1">
-
-          <img class="project-image" src="./resources/uxui_pic.jpg" alt="learning design photo">
-
-          <div class="project-title">
-            <h1>UX/UI </h1>
-            <div class="title-circle tc-reposition2"></div>
-          </div>
-          <div class="project-details">
-            See a display of UX/UI wireframes, prototypes, and completed projects I have designed.
-          </div>
-          
-          <!-- CAROUSEL 3-->
-          <div class="container-fluid carousel3">
-            <hr>
-        
-            <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="9000">
-              <div class="carousel-inner row w-100 mx-auto" role="listbox">
-                <div class="carousel-item col-md-3 active">
-                  <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400/000/fff?text=1" alt="slide 1">
-                </div>
-                <div class="carousel-item col-md-3">
-                  <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=2" alt="slide 2">
-                </div>
-                <div class="carousel-item col-md-3">
-                  <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=3" alt="slide 3">
-                </div>
-                <div class="carousel-item col-md-3">
-                  <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=4" alt="slide 4">
-                </div>
-                <div class="carousel-item col-md-3">
-                  <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=5" alt="slide 5">
-                </div>
-                <div class="carousel-item col-md-3">
-                  <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=6" alt="slide 6">
-                </div>
-                <div class="carousel-item col-md-3">
-                  <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=7" alt="slide 7">
-                </div>
-                <div class="carousel-item col-md-3">
-                  <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=8" alt="slide 7">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-                <i class="fa fa-chevron-left fa-lg text-muted"></i>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
-                <i class="fa fa-chevron-right fa-lg text-muted"></i>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-          <!-- END CAROUSEL  3-->
-        </div>
-        <!-- END Project 3 -->
-      </div>
   </main>
   <section class="section-3">
-    <div class="container-fluid col-sm-12">
+    <div class="container-fluid ">
       <div class="row">
-        <footer class="static-footer ">
+        <footer class="static-footer col-sm-12 ">
           <div class="foot-info">
             <p class="copyright">&copy; Vanessa Doutherd 2021 | Website designed & developed by Vanessa Doutherd</p>
           </div>
@@ -311,7 +130,13 @@
   </section>
 
 
-  <!-- <script src="./index.js"></script> -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  </script>
+
+
 </body>
 
 </html>
