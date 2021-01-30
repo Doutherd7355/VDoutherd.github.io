@@ -28,18 +28,19 @@
 
 
 .btn {
-    width: 30%;
-    padding: .5rem;
+    width: 7rem;
+    padding: .7rem;
     margin: 0 auto;
     color: white;
     background-color: var(--complementaryblue);
-    font-size: 1.5rem;
     text-transform: uppercase;
     transition: transform .1s ease;
 }
 
-.btn:hover {
+.btn:hover{
     transform: scale(1.1);
+    color: white;
+    background-color: var(--complementaryblue);
 }
 
 .btn:active {
@@ -50,9 +51,11 @@
     font-size: 1rem;
 }
 
-div {
+
+
+/* div {
     border: 1px solid grey;
-}
+} */
 
 /* END GLOBALS */
 
@@ -69,7 +72,8 @@ body {
     background-position: center;
     background-repeat: repeat;
     background-size: contain;
-    scroll-behavior: smooth;
+    
+    
 }
 
 #mainNavigation {
@@ -108,7 +112,7 @@ body {
 
 .profile-info {
     /* height: 100vh; */
-    margin-top: 5rem;
+    margin-top: 3.5rem;
     text-align: center;
 }
 
@@ -142,7 +146,7 @@ h2 {
 .scroll-indicator {
     width: 2rem;
     margin: 0 auto;
-   padding: 5rem 0rem 1rem 0rem;
+   padding: 3rem 0rem 1rem 0rem;
     opacity: .5;
 }
 
@@ -266,7 +270,11 @@ h2 {
 .projects-menu{
     margin: 8rem 0rem 1rem 0rem;
     border-radius: 10px 10px 0px 0px;
-    box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.25);
+}
+
+.projects-section{
+    margin-bottom: 18rem;
 }
 /* TAB MAIN */
 .nav-pills{
@@ -290,45 +298,86 @@ h2 {
     text-decoration: none;
 }
 
-.tab-pane{
-    height: 90vh;
-    /* overflow-y: scroll;  */
-}
 
-#pills-portfolio{
+/* #pills-portfolio{
     overflow-y: hidden;
     scroll-behavior: smooth;
 
-}
+} */
+
 
 /* END TAB MAIN */
 /* VERTICAL TAB */
 
 .v-nav{
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
     text-align: center;
     font-size: 1rem;
     color: black;
 }
-
-.vertical-nav .v-nav-pills .v-nav {
+.v-nav-pills{
     background-color: none;
 }
+
 #v-pills-tabContent{
-width: 100%;
+width: 84.7%;
+height: auto;
 background-color: white;
+box-shadow:  2px 2px 3.5px rgba(0, 0, 0, 0.1);
+border-radius: 0px 0px 10px 10px;
+}
+
+
+
+
+.v-tab-content{
+    height: auto; 
 }
 
 /* END VERTICAL TAB */
 
+#project-pill-tabContent{
+    display: grid;
+    grid-template: repeat(4,1fr)/repeat(4/1fr);
+    
+}
 
+.grid-items{
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.grid-item{
+    min-width: 250px;
+    min-height: 250px;
+    max-width: 300px;
+    max-height: 300px;
+  
+    margin: 2rem 4rem;
+    text-align: center;
+    transition: transform .1s ease;
+}
 
+.grid-item:hover{
+    transform: scale(1.1);
+}
+/* CARD STYLES */
+.project-card{
+    background-color:white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card-title{
+    padding: 1rem;
+}
 
 
 
 
 
 /* END PROJECTS */
+/* MEDIA QUERIES */
 @media screen and (max-width: 992px) {
     #mainNavigation {
         margin-top: .5rem;

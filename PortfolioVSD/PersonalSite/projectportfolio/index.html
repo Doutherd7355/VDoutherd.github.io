@@ -56,7 +56,7 @@
 
   <!-- BEGIN PROJECTS -->
 
-  <div class="container ">
+  <div class="container projects-section">
     <div class="container-fluid projects-menu">
       <ul class="nav nav-pills  d-flex justify-content-lg-center" id="pills-tab" role="tablist">
         <li class="nav-item pill" role="presentation">
@@ -68,7 +68,7 @@
             aria-controls="pills-ld" aria-selected="false">learning design</a>
         </li>
         <li class="nav-item pill" role="presentation">
-          <a class="nav-link navTxt" id="pills-webdev-tab" data-bs-toggle="pill" href="#pills-contact" role="tab"
+          <a class="nav-link navTxt" id="pills-webdev-tab" data-bs-toggle="pill" href="#pills-webdev" role="tab"
             aria-controls="pills-webdev" aria-selected="false">web development</a>
         </li>
         <li class="nav-item pill" role="presentation">
@@ -82,61 +82,107 @@
     <div class="tab-content d-block" id="pills-tabContent">
       <!-- PORTFOLIO CONTENT -->
       <div class="tab-pane fade show active" id="pills-portfolio" role="tabpanel" aria-labelledby="pills-portfolio-tab">
-       <!-- START INSIDE TAB -->
-       <div class=" vertical-nav d-flex align-items-center">
+       <!-- START VERTICAL TAB -->
+       <div class=" vertical-nav d-flex align-content-center">
         <div class="nav flex-column v-nav-pills me-1 navTxt" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <a class="nav-link v-nav active" id="v-pills-pos-tab" data-bs-toggle="pill" href="#v-pills-pos" role="tab" aria-controls="v-pills-home" aria-selected="true">Program of Study</a>
-          <a class="nav-link v-nav" id="v-pills-gos-tab" data-bs-toggle="pill" href="#v-pills-gos" role="tab" aria-controls="v-pills-profile" aria-selected="false">Goals & Objectives</a>
-          <a class="nav-link v-nav" id="v-pills-artifacts-tab" data-bs-toggle="pill" href="#v-pills-artifacts" role="tab" aria-controls="v-pills-messages" aria-selected="false">Artifacts</a>
-          <a class="nav-link v-nav" id="v-pills-refstate-tab" data-bs-toggle="pill" href="#v-pills-refstate" role="tab" aria-controls="v-pills-settings" aria-selected="false">Program Reflection & Statement</a>
+          <a class="nav-link v-nav" id="v-pills-gos-tab" data-bs-toggle="pill" href="#v-pills-gos" role="tab" aria-controls="v-pills-profile" aria-selected="false">Goals & Artifacts</a>
+          <a class="nav-link v-nav" id="v-pills-refstate-tab" data-bs-toggle="pill" href="#v-pills-refstate" role="tab" aria-controls="v-pills-settings" aria-selected="false">Program Reflection <br> Statement</a>
         </div>
-        <div class="tab-content" id="v-pills-tabContent">
+        <div class="v-tab-content" id="v-pills-tabContent">
           <div class="tab-pane fade show active" id="v-pills-pos" role="tabpanel" aria-labelledby="v-pills-pos-tab"><img src="./resources/mizzou_logo.jpeg" alt=""></div>
           <div class="tab-pane fade" id="v-pills-gos" role="tabpanel" aria-labelledby="v-pills-gos-tab">...</div>
           <div class="tab-pane fade" id="v-pills-artifacts" role="tabpanel" aria-labelledby="v-pills-artifacts-tab">...</div>
           <div class="tab-pane fade" id="v-pills-refstate" role="tabpanel" aria-labelledby="v-pills-refstate-tab">...</div>
         </div>
       </div>
-      <!-- END INSIDE TAB -->
+      <!-- END VERTICAL TAB -->
       </div>
       <!-- LEARNING DESIGN CONTENT -->
       <div class="tab-pane fade" id="pills-ld" role="tabpanel" aria-labelledby="pills-ld-tab">
-        <!-- START LD CARD CONTENT -->
-        <div class="row row-cols-4 row-cols-md-4 g-4">
-          <div class="col">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <div class="tab-content" id="project-pill-tabContent">
+          <!-- Project Shapes -->
+          <div class="project-shape1"></div>
+          <div class="project-shape2"></div>
+          <div class="project-shapes3"></div>
+
+          <!-- Project Shapes End -->
+          <!-- First Card Set Container-->
+         <div class="grid-items">
+            <!-- First Card-->
+            <div class="grid-item cardA zoom-animation">
+              <div class="project-card">
+                <img class="card-img-top" src="./resources/learning_design_pic.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-primary">View</a>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item cardB">
+              <div class="project-card">
+                <img class="card-img-top" src="./resources/learning_design_pic.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-primary">View</a>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item cardC">
+              <div class="project-card">
+                <img class="card-img-top" src="./resources/learning_design_pic.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-primary">View</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <!-- Second Row -->
+          <div class="grid-items">
+            <!-- Fifth Card-->
+            <div class="grid-item cardD">
+              <div class="project-card">
+                <img class="card-img-top" src="./resources/learning_design_pic.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-primary">View</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            <div class="grid-item cardE">
+              <div class="project-card">
+                <img class="card-img-top" src="./resources/learning_design_pic.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-primary">View</a>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item cardF">
+              <div class="project-card">
+                <img class="card-img-top" src="./resources/learning_design_pic.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-primary">View</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- END LD CARD CONTENT  -->
       </div>
       <!-- WEBDEV CONTENT -->
-      <div class="tab-pane fade" id="pills-webdev" role="tabpanel" aria-labelledby="pills-webdev-tab">...</div>
+      <div class="tab-pane fade" id="pills-webdev" role="tabpanel" aria-labelledby="pills-webdev-tab">
+        <div class="tab-content" id="project-pill-tabContent">
+          
+        </div>
+      </div>
       <!-- UXUI CONTENT -->
-      <div class="tab-pane fade" id="pills-uxui" role="tabpanel" aria-labelledby="pills-uxui-tab">...</div>
+      <div class="tab-pane fade" id="pills-uxui" role="tabpanel" aria-labelledby="pills-uxui-tab">
+        <div class="tab-content" id="project-pill-tabContent">
+          
+        </div>
+      </div>
     </div>
   </div>
 
