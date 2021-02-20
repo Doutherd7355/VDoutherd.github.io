@@ -60,7 +60,9 @@ a:hover {
     font-size: 1rem;
 }
 
-
+.txtCenter {
+    text-align: center;
+}
 
 /* div {
     border: 1px solid grey;
@@ -132,13 +134,12 @@ a:hover {
 
 .profile-info {
     /* height: 100vh; */
-    margin-top: 3.5rem;
+    margin: 2.5rem 0rem;
     text-align: center;
 }
 
 .profile-pic img {
     width: 300px;
-
     display: block;
     margin: 0 auto;
     border-radius: 100%;
@@ -147,7 +148,7 @@ a:hover {
 
 
 .profile-txt {
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 h1 {
@@ -329,13 +330,6 @@ h2 {
 }
 
 
-/* #pills-portfolio{
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-
-} */
-
-
 /* END TAB MAIN */
 /* VERTICAL TAB */
 
@@ -345,27 +339,141 @@ h2 {
     text-align: center;
     font-size: 1rem;
     color: black;
+
 }
 
-.v-nav-pills {
-    background-color: none;
+.v-nav-pills .nav-pills .nav-link {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
 }
+
+.v-nav-pills .nav-pills .nav-link:not(.active) {
+    background-color: none;
+    text-decoration: none;
+}
+
+
+
+
+
 
 #v-pills-tabContent {
-    width: 84.7%;
-    height: auto;
+    width: 100%;
     background-color: white;
     box-shadow: 2px 2px 3.5px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 10px 10px;
 }
 
 
-
-
-.v-tab-content {
-    height: auto;
+/* PROGRAM OF STUDY STYLES */
+.program-info {
+    text-align: center;
+    padding-top: 5rem;
 }
 
+.program-info h3 {
+    text-transform: capitalize;
+}
+
+.program-info h4 {
+    text-transform: capitalize;
+    padding: 1rem 0rem;
+}
+
+.program-info img {
+    width: 20%;
+}
+
+.program-info p {
+    margin-top: 5rem;
+    padding: 1rem 6rem;
+}
+
+table {
+    font-size: 1rem;
+    width: 60%;
+    text-align: left;
+    margin: 3rem auto 6rem;
+}
+
+th {
+    font-size: 1.12rem;
+}
+
+td {
+    padding-top: 1rem;
+}
+
+/* TOOL TIP */
+
+
+/* Tooltip text */
+.tooltip-txt {
+    visibility: hidden;
+    width: 30%;
+    background-color: var(--secondaryyellow);
+    color: #000;
+    text-align: justify;
+    font-weight: normal;
+    line-height: 1.8;
+    font-size: .9rem;
+    padding: 3rem;
+    border-radius: 10px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip-xtraspce {
+    width: 40%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.fas:hover .tooltip-txt {
+    visibility: visible;
+}
+
+.fa-info-circle {
+    color: var(--complementaryblue);
+    padding-left: .5rem;
+}
+
+.fa-info-circle:hover {
+    cursor: pointer;
+}
+
+
+/* TOOP TIP END */
+/* END PROGRAM OF STUDY STYLES */
+/* GOALS OBJECTIVES ARTIFACTS */
+
+.gos-tab-content {
+    padding: 0rem 7rem;
+}
+
+.goal-area-intro {
+    padding: 4rem;
+    margin: 4rem;;
+    background-color: var(--secondaryyellow);
+}
+
+.goal-description h3 {
+    font-weight: bold;
+
+}
+
+.goal-description h4 {
+    font-size: 1rem;
+    padding-top: 1.5rem;
+}
+
+.goal-description{
+    margin: 10rem 0rem;
+}
+
+/* END GOALS OBJECTIVES ARTIFACTS */
 /* END VERTICAL TAB */
 
 #project-pill-tabContent {
@@ -470,7 +578,7 @@ h2 {
 }
 
 .sticky-footer {
-    background-color: var(--primaryyellow); 
+    background-color: var(--primaryyellow);
 }
 
 .sticky-footer .links {
@@ -495,7 +603,7 @@ h2 {
 
 
 .form-content {
-    padding: 5rem 8rem;
+    padding: 4.5rem 8rem;
 }
 
 .contact-head {
@@ -506,13 +614,21 @@ h2 {
     padding-bottom: 1rem;
 }
 
-.form-header p{
+.form-header p {
     font-size: .8rem;
 }
 
-.form-header i{
+.form-header i {
     color: #0e76a8;
     background-color: white;
+}
+
+.form-header .cto {
+    display: inline;
+    padding-left: 1rem;
+    position: relative;
+    bottom: .3rem;
+    font-size: .8rem;
 }
 
 .contact-head h1 {
@@ -532,7 +648,7 @@ h2 {
     background-color: var(--secondaryyellow);
     border-radius: 50%;
     position: relative;
-    top: 2.5rem;
+    top: 1.7rem;
     left: 16rem;
 }
 

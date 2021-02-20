@@ -33,13 +33,12 @@
             <a class="nav-link navTxt" href="#">Resume</a>
           </li>
           <li class="nav-item px-5">
-            <a class="nav-link navTxt" href="#">Contact</a>
+            <a class="nav-link navTxt" href="#contact-form">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
   <!-- BEGIN PROFILE BANNER -->
   <div class="container-fluid" id="home">
     <div class=" row profile-info">
@@ -48,12 +47,13 @@
       </div>
       <div class="profile-txt">
         <h1 class="contentTxt">Vanessa Doutherd</h1>
-        <h2 class="navTxt">Learning Designer & Technologist</h2>
+        <h2 class="navTxt">Educational Design & Technology Professional</h2>
         <div class="scroll-indicator"></div>
       </div>
     </div>
   </div>
   <!-- END PROFILE BANNER -->
+
 
   <!-- BEGIN PROJECTS -->
 
@@ -84,26 +84,324 @@
       <!-- PORTFOLIO CONTENT -->
       <div class="tab-pane fade show active" id="pills-portfolio" role="tabpanel" aria-labelledby="pills-portfolio-tab">
         <!-- START VERTICAL TAB -->
-        <div class=" vertical-nav d-flex align-content-center">
-          <div class="nav flex-column v-nav-pills me-1 navTxt" id="v-pills-tab" role="tablist"
+        <div class="d-flex align-items-start v-nav-pills">
+          <div class="nav flex-column nav-pills me-3 navTxt " id="v-pills-tab" role="tablist"
             aria-orientation="vertical">
-            <a class="nav-link v-nav active" id="v-pills-pos-tab" data-bs-toggle="pill" href="#v-pills-pos" role="tab"
-              aria-controls="v-pills-home" aria-selected="true">Program of Study</a>
-            <a class="nav-link v-nav" id="v-pills-gos-tab" data-bs-toggle="pill" href="#v-pills-gos" role="tab"
-              aria-controls="v-pills-profile" aria-selected="false">Goals & Artifacts</a>
-            <a class="nav-link v-nav" id="v-pills-refstate-tab" data-bs-toggle="pill" href="#v-pills-refstate"
-              role="tab" aria-controls="v-pills-settings" aria-selected="false">Program Reflection <br> Statement</a>
+            <a class="nav-link active v-nav" id="v-pills-pos-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pos"
+              role="tab" aria-controls="v-pills-pos" aria-selected="true">Program of Study</a>
+            <a class="nav-link v-nav" id="v-pills-gos-tab" data-bs-toggle="pill" data-bs-target="#v-pills-gos"
+              role="tab" aria-controls="v-pills-gos" aria-selected="false">Goals & Artifacts</a>
+            <a class="nav-link v-nav" id="v-pills-refs-tab" data-bs-toggle="pill" data-bs-target="#v-pills-refs"
+              role="tab" aria-controls="v-pills-refs" aria-selected="false">Program Reflection Statement</a>
           </div>
-          <div class="v-tab-content" id="v-pills-tabContent">
-            <div class="tab-pane v-pane fade show active" id="v-pills-pos" role="tabpanel"
-              aria-labelledby="v-pills-pos-tab"><img class="responsive-img" src="./resources/mizzou_logo.jpeg" alt="">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-pos" role="tabpanel" aria-labelledby="v-pills-pos-tab">
+              <!-- START MIZZOU PROGRAM OF STUDY INFORMATION -->
+              <div class="tab-pane v-pane fade show active" id="v-pills-pos" role="tabpanel"
+                aria-labelledby="v-pills-pos-tab">
+                <div class="container-fluid ">
+                  <div class="container program-info">
+                    <h3 class="navTxt">University of Missouri - Colombia</h3>
+                    <h4 class="contentTxt">School of Information Science & Learning Technologies</h4>
+                    <img class="responsive-img" src="./resources/mizzou_logo.jpeg" alt="Mizzou school logo">
+                    <h4 class="contentTxt">Graduation Date: Fall 2021</h4>
+                    <h3 class="navTxt">Ed.S. Learning Technologies & Design</h3>
+                    <!-- BEGIN PROGRAM OF STUDY TABLE -->
+                    <p>The following courses were taken to fulfill the requirements for a Specialist degree in Learning
+                      Technology & Design with an emphasis in User Experience & Usability (UXU) from the University of
+                      Missouri-Columbia. </p>
+                    <table id="main-table">
+                      <tr class="program-row1">
+                        <th> Course Name</th>
+                        <th class="txtCenter">Credit</th>
+                        <th class="txtCenter">Semester</th>
+                        <th class="txtCenter">Grade</th>
+                      </tr>
+                      <tr class="program-row2">
+                        <td>Instructional Systems Design <i class="fas fa-info-circle">
+                            <div class="tooltip-txt contentTxt">
+                              Develop knowledge and skills related to the systematic design of instruction. Learn to
+                              analyze, design, develop, implement, and evaluate learning systems and instruction.
+                              Identify
+                              appropriate technologies to support learning and explore alternative models of
+                              instructional
+                              design.</div>
+                          </i></td>
+                        <td class="txtCenter">3</td>
+                        <td class="txtCenter">F2020</td>
+                        <td class="txtCenter">A</td>
+                      </tr>
+                      <tr class="program-row3">
+                        <td>Front End Analysis of Systems <i class="fas fa-info-circle">
+                            <div class="tooltip-txt contentTxt">
+                              Develop skills for systematically analyzing learning, or other types of systems, that need
+                              to be improved. Develop data collection instruments (e.g. surveys, observation protocols,
+                              interviews); analyze secondary data; analyze tasks or activities in the system, and
+                              interpret data to make recommendations for system improvement. Skills will be learned by
+                              doing and applying to real systems that need improvement.
+                        <td class="txtCenter">3</td>
+                        <td class="txtCenter">F2020</td>
+                        <td class="txtCenter">A</td>
+                      </tr>
+                      <tr class="program-row4">
+                        <td>Research Methods <i class="fas fa-info-circle">
+                            <div class="tooltip-txt contentTxt">
+                              Research methods and ethics of research in the social sciences, focusing on the
+                              information
+                              professions and learning technologies
+                        <td class="txtCenter">3</td>
+                        <td class="txtCenter">F2020</td>
+                        <td class="txtCenter">A</td>
+                      </tr>
+                      <tr class="program-row5">
+                        <td>Usability of Information Systems and Services<i class="fas fa-info-circle">
+                            <div class="tooltip-txt contentTxt">
+                              Introduction to concepts and methods of usability testing and research and user-centered
+                              design strategy. Course takes a process approach to define target audiences and usability
+                              problems, create and administer investigative procedures, analyze results, and report
+                              findings effectively.
+                        <td class="txtCenter">3</td>
+                        <td class="txtCenter">F2020</td>
+                        <td class="txtCenter">A</td>
+                      </tr>
+                      <tr class="program-row6">
+                        <td>Web Design and Development<i class="fas fa-info-circle">
+                            <div class="tooltip-txt contentTxt">
+                              Learn fundamentals of setting up a website, creating and implementing web design, and
+                              exploring responsive web design using HTML5 and CSS3 (cascading style sheets). Develop a
+                              fully functional website ready to use or to allow for more advanced web languages to be
+                              integrated.
+                        <td class="txtCenter">3</td>
+                        <td class="txtCenter">F2020</td>
+                        <td class="txtCenter">A</td>
+                      </tr>
+                      <tr class="program-row7">
+                        <td>Project Management<i class="fas fa-info-circle">
+                            <div class="tooltip-txt tooltip-xtraspce contentTxt">
+                              This course introduces the learner to the necessary and practical project management
+                              concepts and skills that lead to reductions in project cycle time while maintaining
+                              control
+                              over budget, resources, risk, and delivered value. This course proposes to integrate
+                              practical project management skills within the project management lifecycle (i.e.,
+                              initiating, planning, executing, controlling, and closing).
+                        <td class="txtCenter">3</td>
+                        <td class="txtCenter">F2020</td>
+                        <td class="txtCenter">A</td>
+                      </tr>
+                      <tr class="program-row8">
+                        <td>Technology to Enhance Learning<i class="fas fa-info-circle">
+                            <div class="tooltip-txt contentTxt">
+                              Strategies for integrating technology into the teaching and learning process, with a focus
+                              on enhancing how students think rather than what they think. Special attention given to
+                              supporting higher order thinking and problem solving with technology.
+                        <td class="txtCenter">3</td>
+                        <td class="txtCenter">F2020</td>
+                        <td class="txtCenter">A</td>
+                      </tr>
+                      <tr class="program-row9">
+                        <td>Rapid Development Tools for Online Learning<i class="fas fa-info-circle">
+                            <div class="tooltip-txt tooltip-xtraspce contentTxt">
+                              Students will apply principles of rapid development and use rapid development tools to
+                              create a prototype of an e-learning module that uses technology features that can enhance
+                              learning (e.g. learner interactions). Specific competencies include: Storyboard and
+                              "rapidly" develop an e-learning module using software designed to support this process;
+                              Use
+                              software tools that develop specific elements of e-learning (e.g. video, animation,
+                              gaming),
+                              and incorporate those elements into an e-learning module; Evaluate rapidly developed
+                              e-learning products; Compare and contrast features of rapid development software packages.
+                        <td class="txtCenter">3</td>
+                        <td class="txtCenter">F2020</td>
+                        <td class="txtCenter">A</td>
+                      </tr>
+                      <tr class="program-row10">
+                        <td>Interaction Design<i class="fas fa-info-circle">
+                            <div class="tooltip-txt contentTxt">
+                              Students will learn the basic concepts of interaction design, then focus on usability
+                              engineering and prototyping principles to support the design process for learning and
+                              performance based technologies.
+                        <td class="txtCenter">3</td>
+                        <td class="txtCenter">F2020</td>
+                        <td class="txtCenter">A</td>
+                      </tr>
+                      <tr class="program-row11">
+                        <td>User Experience Internship<i class="fas fa-info-circle">
+                            <div class="tooltip-txt contentTxt">
+                              Internship in the University of Missouri Information Experience Laboratory. IE Lab is a
+                              usability and user experience lab with the
+                              mission to improve learning technologies,
+                              information and communication systems.
+                              IE Lab interns assist in providing professional usability and User
+                              Experience evaluation services by conducting research and evaluating
+                              digital technology for clients in diverse
+                              fields such as journalism, healthcare,
+                              computer science and education.
+                        <td class="txtCenter">3</td>
+                        <td class="txtCenter">F2020</td>
+                        <td class="txtCenter">A</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <!-- END PROGRAM OF STUDY TABLE -->
             </div>
-            <div class="tab-pane v-pane fade" id="v-pills-gos" role="tabpanel" aria-labelledby="v-pills-gos-tab">...
+            <!-- END OF PROGRAM OF STUDY -->
+            <!-- BEGIN GOALS AND ARTIFACTS -->
+            <div class="tab-pane fade" id="v-pills-gos" role="tabpanel" aria-labelledby="v-pills-gos-tab">
+              <p class="goal-area-intro">The following artifacts and reflections are a representation of my
+                understanding of the competencies required for the Learning Technology and Design Education Specialist
+                program (LTD) and the User Experience and Usability emphasis (UXU).
+                Artifacts are aligned with the competency I feel demonstrate them most effectively.
+                You can find further examples of my work in the horizontal tabs.</p>
+              <div class="container gos-tab-content">
+                <div class="goal-description goal1">
+                  <h3 class="contentTxt">Goal 1. Design and Development of Learning Systems</h3>
+                  <h4 class="contentTxt">LTD</h4>
+                  <p>To provide students with experiences to develop theory-grounded and research-based competencies for
+                    the innovative, aesthetic, effective and sustainable design/development and management of
+                    technologies for learning opportunities and systems.</p>
+                  <div class="d-flex">
+                    <div class="grid-item card1">
+                      <a href="#">
+                        <div class="project-card ">
+                          <img class="card-img-top" src="./resources/learning_design_pic.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="grid-item card2">
+                      <a href="#">
+                        <div class="project-card ">
+                          <img class="card-img-top" src="./resources/learning_design_pic.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="grid-item card3">
+                      <a href="#">
+                        <div class="project-card ">
+                          <img class="card-img-top" src="./resources/learning_design_pic.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <h4 class="contentTxt">UXU</h4>
+                  <p>To provide students with experiences to develop theory-grounded and research-based competencies for
+                    the innovative, aesthetic, effective and sustainable design/development and management of
+                    technologies for learning opportunities and systems.</p>
+                </div>
+                <!-- Goal 2 -->
+                <div class="goal-description goal2">
+                  <h3 class="contentTxt">Goal 2. Front-End Analysis and System Evaluation</h3>
+                  <h4 class="contentTxt">LTD</h4>
+                  <p>To provide students with experiences to develop skills in data collection, analysis and evaluation
+                    for reflecting on and applying to the design/development of learning opportunities and systems.</p>
+                  <div class="d-flex">
+                    <div class="grid-item card4">
+                      <a href="#">
+                        <div class="project-card ">
+                          <img class="card-img-top" src="./resources/learning_design_pic.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="grid-item card5">
+                      <a href="#">
+                        <div class="project-card ">
+                          <img class="card-img-top" src="./resources/learning_design_pic.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="grid-item card6">
+                      <a href="#">
+                        <div class="project-card ">
+                          <img class="card-img-top" src="./resources/learning_design_pic.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <h4 class="contentTxt">UXU</h4>
+                  <p>To provide students with experiences to develop theory-grounded and research-based competencies for
+                    the innovative, aesthetic, effective and sustainable design/development and management of
+                    technologies for learning opportunities and systems.</p>
+                </div>
+                <!-- END GOAL 2 -->
+                <!-- GOAL 3 -->
+                <div class="goal-description goal3">
+                  <h3 class="contentTxt">Goal 3. Leadership & Social Responsibility
+                  </h3>
+                  <h4 class="contentTxt">LTD</h4>
+                  <p>To provide students with experiences to become socially responsible, reflective/sensitive on the interaction of technologies & society and act ethically in response to current and future challenges of emerging technologies for learning.
+                  </p>
+                  <div class="d-flex">
+                    <div class="grid-item card4">
+                      <a href="#">
+                        <div class="project-card ">
+                          <img class="card-img-top" src="./resources/learning_design_pic.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="grid-item card5">
+                      <a href="#">
+                        <div class="project-card ">
+                          <img class="card-img-top" src="./resources/learning_design_pic.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="grid-item card6">
+                      <a href="#">
+                        <div class="project-card ">
+                          <img class="card-img-top" src="./resources/learning_design_pic.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <h4 class="contentTxt">UXU</h4>
+                  <p>To provide students with experiences to develop theory-grounded and research-based competencies for
+                    the innovative, aesthetic, effective and sustainable design/development and management of
+                    technologies for learning opportunities and systems.</p>
+                </div>
+                <!-- END GOAL 3 -->
+              </div>
+
+
+
             </div>
-            <div class="tab-pane v-pane fade" id="v-pills-artifacts" role="tabpanel"
-              aria-labelledby="v-pills-artifacts-tab">...</div>
-            <div class="tab-pane v-pane fade" id="v-pills-refstate" role="tabpanel"
-              aria-labelledby="v-pills-refstate-tab">...</div>
+            <!-- END GOALS AND ARTIFACTS -->
+            <!-- BEGIN REFLECTION STATEMENT -->
+            <div class="tab-pane fade" id="v-pills-refs" role="tabpanel" aria-labelledby="v-pills-refs-tab">...</div>
+            <!-- END REFLECTION STATEMENT -->
           </div>
         </div>
         <!-- END VERTICAL TAB -->
@@ -206,14 +504,14 @@
       </div>
     </div>
   </main>
-<!-- TEXT FOR SMALL SCREENS -->
+  <!-- TEXT FOR SMALL SCREENS -->
   <div class="projects-section-b container-fluid">
     <div class="view-note contentTxt">
       Projects are best viewed on a bigger screen!
     </div>
   </div>
 
-</main>
+  </main>
   <!-- END PROJECTS -->
 
 
@@ -223,7 +521,8 @@
       <div class="row">
         <footer class="static-footer col-sm-12 ">
           <div class="foot-info">
-            <p class="copyright contentTxt">&copy; Vanessa Doutherd 2021 | Website designed & developed by Vanessa Doutherd</p>
+            <p class="copyright contentTxt">&copy; Vanessa Doutherd 2021 | Website designed & developed by Vanessa
+              Doutherd</p>
           </div>
         </footer>
       </div>
@@ -250,12 +549,14 @@
               <div class="title-circle-foot"></div>
               <h1 class="navTxt"><strong>Get in Touch</strong></h1>
               <p class="contentTxt">doutherdv@gmail.com</p>
-              <a href="https://www.linkedin.com/in/vanessa-doutherd/"><i class="fab fa-linkedin fs-2"></i></a>
+              <a href="https://www.linkedin.com/in/vanessa-doutherd/"><i class="fab fa-linkedin fs-2"></i>
+                <div class="cto contentTxt">Follow Me!</div>
+              </a>
               <hr class="hr-lg">
             </div>
           </div>
           <div class="row">
-            <div class="contact-footer-form">
+            <div class="contact-footer-form" id="contact-form">
               <form action="mailto:doutherdv@gmail.com" method="POST" enctype="text/plain">
                 <div class="row">
                   <div class="col-sm-12 form-text ">
