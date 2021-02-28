@@ -369,7 +369,7 @@ h2 {
 /* PROGRAM OF STUDY STYLES */
 .program-info {
     text-align: center;
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 
 .program-info h3 {
@@ -450,7 +450,7 @@ td {
 /* GOALS OBJECTIVES ARTIFACTS */
 
 .gos-tab-content {
-    padding: 0rem 7rem;
+    padding: 0rem 3rem;
 }
 
 .goal-area-intro {
