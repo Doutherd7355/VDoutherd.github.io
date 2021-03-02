@@ -4,9 +4,16 @@ body {
 }
 
 #container {
-  width: 62.5rem;
-  height: 36rem;
-  margin: 1.3rem auto;
+  width: 90%;
+  height: 90vh;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  justify-content: center;
+  
+  top: 1.8rem;
   background-image: url('./resources/calcBkg.png');
 }
 
@@ -16,8 +23,7 @@ body {
   background-color: #fff;
   margin: 0 auto;
   padding: .5rem;
-  position: relative;
-  top: 1rem;
+  box-shadow: -30px 25px 10px rgba(0, 0, 0, 0.884);
   border-radius: .3rem;
   border: 1.5mm inset #F48BF5;
 }
