@@ -1,0 +1,71 @@
+.resume-page {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 3.5px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 10px 10px;
+    padding: 5rem 9rem;
+
+
+    .contact-area-full {
+        margin: 0rem 0rem 5rem;
+
+        .resume-pic {
+            width: 51%;
+            border-radius: 50%;
+            border: 1rem solid var(--primaryyellow);
+        }
+
+        .contact-info-area {
+            margin-top: 0rem;
+        }
+
+        .contact-info {
+            margin-top: 2rem;
+        }
+
+        h1 {
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 1rem;
+            line-height: 2;
+        }
+
+        
+
+        i {
+            color: var(--primaryyellow);
+            padding-right: 1rem;
+        }
+
+        .ahcnor-h2 {
+            display: inline;
+            padding-right: 1rem;
+            color: rgb(38, 110, 218);
+            text-decoration: underline;
+        }
+
+        ;
+    }
+
+    ;
+
+    h3 {
+        padding: 1.5rem 0rem;
+    }
+
+    p {
+        padding-bottom: 5rem;
+    }
+
+    .right-info-column {
+        padding-left: 3rem;
+
+      
+
+        h3 {
+            padding: 1.5rem 0rem;
+        }
+    }
+}

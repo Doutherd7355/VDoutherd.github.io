@@ -1,6 +1,50 @@
-.resume-page{
-    width: 100%;
-    background-color: white;
-    box-shadow: 2px 2px 3.5px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 10px 10px;
+.resume-page {
+  width: 100%;
+  background-color: white;
+  box-shadow: 2px 2px 3.5px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 10px 10px;
+  padding: 5rem 9rem;
 }
+.resume-page .contact-area-full {
+  margin: 0rem 0rem 5rem;
+}
+.resume-page .contact-area-full .resume-pic {
+  width: 51%;
+  border-radius: 50%;
+  border: 1rem solid var(--primaryyellow);
+}
+.resume-page .contact-area-full .contact-info-area {
+  margin-top: 0rem;
+}
+.resume-page .contact-area-full .contact-info {
+  margin-top: 2rem;
+}
+.resume-page .contact-area-full h1 {
+  font-weight: bold;
+}
+.resume-page .contact-area-full h2 {
+  font-size: 1rem;
+  line-height: 2;
+}
+.resume-page .contact-area-full i {
+  color: var(--primaryyellow);
+  padding-right: 1rem;
+}
+.resume-page .contact-area-full .ahcnor-h2 {
+  display: inline;
+  padding-right: 1rem;
+  color: #266eda;
+  text-decoration: underline;
+}
+.resume-page h3 {
+  padding: 1.5rem 0rem;
+}
+.resume-page p {
+  padding-bottom: 5rem;
+}
+.resume-page .right-info-column {
+  padding-left: 3rem;
+}
+.resume-page .right-info-column h3 {
+  padding: 1.5rem 0rem;
+}/*# sourceMappingURL=portfolioresume.css.map */
