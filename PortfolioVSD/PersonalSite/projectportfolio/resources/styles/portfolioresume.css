@@ -1,12 +1,11 @@
 .resume-page {
-  width: 100%;
   background-color: white;
   box-shadow: 2px 2px 3.5px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 10px 10px;
-  padding: 5rem 9rem;
+  padding: 6rem;
 }
-.resume-page .contact-area-full {
-  margin: 0rem 0rem 5rem;
+.resume-page h3 {
+  padding-bottom: 1rem;
 }
 .resume-page .contact-area-full .resume-pic {
   width: 51%;
@@ -36,15 +35,16 @@
   color: #266eda;
   text-decoration: underline;
 }
-.resume-page h3 {
-  padding: 1.5rem 0rem;
+.resume-page .about-me-area {
+  margin-top: 6rem;
 }
-.resume-page p {
-  padding-bottom: 5rem;
+.resume-page .about-me-area .about-me-content {
+  text-align: justify;
+  margin: 1rem 0rem;
 }
-.resume-page .right-info-column {
-  padding-left: 3rem;
+.resume-page .experience-area .work-exp-sp {
+  padding-top: 1rem;
 }
-.resume-page .right-info-column h3 {
-  padding: 1.5rem 0rem;
+.resume-page .experience-area .work-exp-sp .attention {
+  font-weight: 700;
 }/*# sourceMappingURL=portfolioresume.css.map */
